@@ -1,0 +1,145 @@
+
+header{
+    overflow: hidden;
+    
+
+}
+.welcome{
+    -webkit-animation-name: welc;
+    -moz-animation-name: welc;
+    -o-animation-name: welc;
+    animation-name: welc;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    -o-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:forwards ;
+    -moz-animation-fill-mode:forwards ;
+    -o-animation-fill-mode:forwards ;
+    animation-fill-mode:forwards ; 
+    
+    
+}
+
+
+.span_hello+.z_index, .span_hello{
+
+    -webkit-animation-name: h1;
+    -moz-animation-name: h1;
+    -o-animation-name: h1;
+    animation-name: h1;
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    -o-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:forwards ;
+    -moz-animation-fill-mode:forwards ;
+    -o-animation-fill-mode:forwards ;
+    animation-fill-mode:forwards ;
+   
+}
+
+.web_img img{
+    -webkit-animation-name: first_img;
+    -moz-animation-name: first_img;
+    -o-animation-name: first_img;
+    animation-name: first_img;
+ -webkit-animation-duration:1s;
+ -moz-animation-duration:1s;
+ -o-animation-duration:1s;
+ animation-duration:1s;
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    position: relative;
+    
+}
+
+
+@-webkit-keyframes first_img{
+    from{top:-1000px;}
+    to  {top:0;}
+}
+
+
+@-moz-keyframes first_img{
+    from{position:relative; top:-1000px;}
+    to  {top:0;}
+}
+
+
+@-o-keyframes first_img{
+    from{position:relative; top:-1000px;}
+    to  {top:0;}
+}
+
+
+@keyframes first_img{
+    from{position:relative; top:-1000px;}
+    to  {top:0;}
+}
+
+
+
+
+
+@-webkit-keyframes h1{
+    from{left:-150%;}
+    to{left:0;}
+
+}
+
+
+
+
+
+@-moz-keyframes h1{
+    from{left:-150%;}
+    to{left:0;}
+
+}
+
+
+
+
+
+@-o-keyframes h1{
+    from{left:-150%;}
+    to{left:0;}
+
+}
+
+
+
+
+
+@keyframes h1{
+    from{left:-150%;}
+    to{left:0;}
+
+}
+@-webkit-keyframes welc{
+    from{right:-150%;}
+    to{right:0;}
+
+}
+@-moz-keyframes welc{
+    from{right:-150%;}
+    to{right:0;}
+
+}
+@-o-keyframes welc{
+    from{right:-150%;}
+    to{right:0;}
+
+}
+@keyframes welc{
+    from{right:-150%;}
+    to{right:0;}
+
+}
+
+
+
+

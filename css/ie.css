@@ -1,0 +1,60 @@
+
+body *, .button{display:none;}
+
+.ie_container, .ie_container img {display: inline-block;
+}
+body, html{
+text-align: center;
+    padding: 0;
+    height: 100%;
+    
+}
+.ie-none{
+    display:inline-block;
+    width: 350px;
+    height: 225px; 
+    background-image: url(../img/ie.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    top:50%;
+    margin-top:-112px
+    
+}
+.ie-h1{
+    display:block;
+    text-align: center;
+    position: absolute;
+    left:0;
+    top:10px;
+    color:#fff;
+    font-size: 20px;
+    width: 100%;
+}
+.span_a{
+    display:block;
+    text-align: center;
+    position: absolute;
+    left:0;
+    bottom:0;
+    color:#fff;
+    font-size: 16px;
+    width: 100%;   
+}
+.ie_up{
+    display:block;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
