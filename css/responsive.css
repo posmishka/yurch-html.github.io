@@ -142,7 +142,7 @@ body{
 }
    
 }
-@media (max-width:315px) {
+@media (max-width:300px) {
     body>*{
         display:none;}
     body{
@@ -271,7 +271,7 @@ width: 120px;
 }
 
 
-@media (max-height:300px){
+@media (max-height:280px){
 	body>*{
 		display:none;
         
