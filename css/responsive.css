@@ -212,7 +212,7 @@ body{
     width: 60%;
 }
 .html, .css{
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 600;
 	padding-top: 10px;
 }
@@ -281,7 +281,7 @@ width: 120px;
 }
 
 
-@media (max-height:280px){
+@media (max-height:250px){
 	body>*{
 		display:none;
         
