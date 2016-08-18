@@ -9,10 +9,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-position: center center;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+
 }
 
 .menu_main {
@@ -863,8 +860,8 @@ body {
 .web_img img {
     width: 150px;
     opacity: 0.4;
-    margin-bottom: 15px;
-    margin-top: -15px;
+    margin-bottom: 30px;
+ 
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -o-transition: 1s;
