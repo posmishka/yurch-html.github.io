@@ -1452,6 +1452,7 @@ figure img {
 
 .container_portf {
     opacity: 0;
+    padding: 15px;
 }
 
 .portfolio:hover .container_portf {
@@ -1460,11 +1461,11 @@ figure img {
 }
 
 .portfolio:hover .container_portf span {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .portfolio:hover .container_portf small {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 
