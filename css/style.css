@@ -1144,7 +1144,7 @@ main {
     left: 0;
     z-index: 0;
 }
-.span_none social{font-size: 0;}
+.social{font-size: 0;}
 .summary {
     max-width: 1100px;
     text-align: center;
@@ -1540,7 +1540,9 @@ figure img {
 
 
 
-
+.code{
+    display:none;
+}
 
 
 
