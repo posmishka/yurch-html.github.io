@@ -1,0 +1,298 @@
+span,div, li, p{font-family:arial;}
+body{background:#f0f1f2;}
+.main{
+margin:0 auto;
+width:1300px;
+box-shadow:0 0 4px grey;	
+
+background:white;
+}
+header{
+
+height:80px;
+width:1300px;
+}
+.logoireg{
+width:600px;
+height:45px;
+	display:inline-block;
+}
+.logoireg img{
+margin:10px 40px;	
+}
+.registru{
+font-size:14px;
+    line-height: 52px;
+height:45px;
+float: right;	
+    color: #B3B3B3;	
+}
+.ru {
+    background: url('img/2.png');
+    margin-left: 30px;
+    background-position: 27px 20px;
+    background-size: 14px;
+    background-repeat: no-repeat;
+    width: 82px;
+    display: inline-block;
+}
+.manu{
+	height:25px;
+	width:1300px;
+	background:pink;
+	}
+
+.menu ul li{
+float:left;
+list-style-type:none;
+    line-height: 30px;	
+	
+}
+.menu ul li a{
+text-decoration:none;
+color:black;
+font-size:16px;
+padding-right: 15px;	
+}	
+.menu ul{margin-left:40px;}
+
+.ulilm{
+	    float: right;
+    margin-right: 25px;
+}
+.ulilm li{margin-left:10px;}
+
+.positionbot{
+	width:1300px;
+	
+	height:90px;
+	text-align:center;
+	    position: relative;
+    top: -24px;
+    z-index: 999;
+}
+.treug{
+	border: 20px solid transparent;	
+	border-top: 20px solid green;
+	width:0;
+	opacity:1;
+}
+
+.p1{
+background:#2e2e2e;
+width:635px;
+	height:90px;
+	float:left;
+	
+}
+.p2{
+background:#2e2e2e;
+width:635px;
+	height:90px;
+	float:right;
+}
+.tre1{
+	border: 20px solid transparent;	
+	border-bottom: 20px solid #2E2E2E;
+	position:relative;
+	    position: relative;
+    left: 20px;
+    top: -20px;
+	}
+.tre2{
+	border: 20px solid transparent;	
+	border-bottom: 20px solid #2E2E2E;
+	    position: relative;
+    left: -20px;
+    top: -20px;
+	}
+	
+	.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 158%;
+    border: 0;
+    right: 650px;
+    position: relative;
+}
+	.tre3{
+	   position: relative;
+   left: -52%;
+    top: -20px;	
+	background:#2e2e2e;
+width:635px;
+	height:70px;
+	text-align:center;
+	}
+
+.img123{
+width:120px;
+		height:40px;
+		border:1px solid white;
+		border-radius:5px;
+		background-color:#0e52b0;
+		display:inline-block;
+		z-index:999;
+	margin-top: 2px; 
+	 vertical-align: top;
+	     margin-right: 5px;
+		 background-image:url("img/14.png");
+		 background-repeat:no-repeat;
+		     background-position: 27px 16px;
+}	
+	
+	.tre3 a{
+		display:inline-block;
+	}
+	.img111{display:inline-block;}
+	
+	
+.img123 a{	
+	color: white;
+    text-decoration: none;
+    font-size: 8px;
+    padding: 4px 5px;
+    vertical-align: top;
+    width: 100px;
+    float: left;
+}	
+main{text-align:center;}
+.fordiv{
+width:300px;
+height:200px;
+
+display:inline-block;
+text-align:center;	
+	padding-top:120px;
+	background-image:url("img/24.png");
+		 background-repeat:no-repeat;
+		     background-position: center top;
+}	
+#wrapper {
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+  
+}	
+.for0 a{
+text-decoration:none;
+color:#FF4040;
+font-size:20px;	
+font-weight:bold;
+}	
+.fordiv span{
+
+font-size:14px;		
+}
+.for1 a{
+text-decoration:none;
+color:#90C085;
+font-size:20px;	
+font-weight:bold;
+}
+.for1{
+background-image:url("img/22t.png")	
+}
+.for2 a{
+text-decoration:none;
+color:#504C99;
+font-size:20px;	
+font-weight:bold;
+}
+.for2{
+background-image:url("img/23.png")	
+}
+.for3 a{
+text-decoration:none;
+color:#F28B30;
+font-size:20px;	
+font-weight:bold;
+}
+.for3{
+background-image:url("img/21.png")	
+}
+
+.fordiv a{
+    padding-bottom: 10px;
+    display: inline-block;	
+}
+
+.little1 {
+    width: 468px;
+    height: 150px;
+box-shadow: 0.1em 0.1em 5px rgba(122,122,122,0.5);
+    display: inline-block;
+    text-align: left;
+    margin: 2px;
+    padding-top: 52px;
+
+    padding-left: 120px;
+}
+.little1 a{
+	color:#3062b6;
+	font-weight:bold;
+font-size:18px;	
+display:inline-block;
+padding-bottom:10px;
+text-decoration:none;
+}
+.little1 span{
+	color:black;
+font-size:14px;	
+}
+
+
+.lit3{margin-left: -3px;}
+
+.littlebig{
+	margin-top:40px;
+}
+
+footer{
+height:80px;
+width:1300px;
+background:#2f2f2f;
+margin-top:100px;	
+}
+footer .aamg{
+	margin-left:50px;
+	vertical-align:middle;
+line-height:95px;
+}
+footer ul li{
+float:left;
+list-style-type:none;
+   	
+	
+}
+footer ul {
+float: right;
+margin-right:40px;
+}
+footer ul li a{
+color:white;
+font-size:14px;	
+   text-decoration:none;	
+    padding: 46px 10px;
+	display:inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
