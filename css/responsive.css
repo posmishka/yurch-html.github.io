@@ -112,6 +112,14 @@ figure {
     .rgba_img small {
         display: none;
     }
+    header{
+        background-image: url('../img/klavamobil.jpg');
+    }
+    .acticle_two {
+    background-image: url('../img/platamobil.jpg');
+    
+    
+    
 }
 
 @media (max-width:750px) {
@@ -220,6 +228,9 @@ figure {
     .acticle_two {
         padding: 35px 20px;
     }
+    .span_hello {
+    width: 65px;
+}
 }
 
 @media (max-width:470px) {
@@ -297,6 +308,9 @@ figure {
         margin: 10px 0;
         font-size: 12px;
     }
+    .span_hello {
+    width: 64px;
+}
 }
 
 @media (max-width:315px) {
@@ -405,7 +419,7 @@ figure {
         font-size: 18px;
     }
     .span_hello {
-        width: auto;
+        width: 77px;
     }
 }
 
