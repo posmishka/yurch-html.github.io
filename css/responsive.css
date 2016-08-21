@@ -113,7 +113,7 @@ figure {
         display: none;
     }
     header{
-        background-image: url('../img/klavamobil.jpg');
+        background-image: url('../img/hend.jpg');
     }
     .acticle_two {
         background-image: url('../img/platamobil.jpg');
@@ -408,8 +408,9 @@ figure {
     .hello span {
         font-size: 30px;
     }
-    .image_main {
-        margin-bottom: 20px;
+    .image_main h3{
+       margin: 10px;
+        font-size: 16px;
     }
     .image_main img {
         width: 120px;

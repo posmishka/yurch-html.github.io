@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <!-- saved from url=(0014)about:internet -->
     <title>yurch.html</title>
     <link rel="icon" type="image/png" href="img/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script type='text/javascript' src='js/jquery-3.1.0.min.js'></script>
-   
+    <script type='text/javascript' src='js/jquery-3.1.0.min.js'></script>
+
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -21,10 +22,34 @@
     <script src="js/scroll.js" defer></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,500italic,500,400italic' rel='stylesheet' type='text/css'>
+    <script>
+        function AjaxFormRequest(result_id2, formMain2, url) {
+            jQuery.ajax({
+                url: url,
+                type: "POST",
+                dataType: "html",
+                data: jQuery("#" + formMain2).serialize(),
+                success: function(response) {
+                    document.getElementById(result_id2).innerHTML = response;
+                },
+                error: function(response) {
+                    document.getElementById(result_id2).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте еще раз</p>";
+                }
+            });
+
+            $(':input', '#formMain2')
+                .not(':button, :submit, :reset, :hidden')
+                .val('')
+                .removeAttr('checked')
+                .removeAttr('selected');
+
+
+        }
+    </script>
 </head>
 
 <body>
- <header  id="home">
+    <header id="home">
 
 
         <div class="ie-none">
@@ -34,7 +59,7 @@
 
 
         <div class="code">
-            <div class="web_img"><img src="img/web.png" alt=""></div>
+            <div class="web_img"><img src="img/world.png" alt=""></div>
             <h1><span class="span_hello n_hello">Hello.</span> <span class="z_index">I’m A Junior HTML coder</span></h1>
             <span class="welcome"><span class="z_index">Welcome to My Portfolio</span></span>
 
@@ -135,7 +160,8 @@
             <div class="slide_menu">
                 <div class="hello"><span class="span_hello">Hello</span></div>
                 <div class="image_main">
-                    <img src="img/im.jpg" alt="">
+                    <img src="img/im.jpg" alt="i'm">
+                    <h3>Roman Yurchenko</h3>
                 </div>
                 <ul>
                     <li><a class="active_menu" href="#about_me"><i class="fa fa-user" aria-hidden="true"></i> <span class="menu_hover">Обо мне</span> </a></li>
@@ -144,9 +170,9 @@
                 </ul>
             </div>
         </div>
-        
+
         <!-- <!-menu_mobile-> -->
-        
+
         <div class="menu_mobile">
             <div class="mini_mobile">
                 <div class="front_mobile">
@@ -232,16 +258,16 @@
             <p><strong>Подробнее:</strong> Путь верстальщика начал в 2015 г. после службы в армии, когда компьютерные курсы "ШАГ" предоставили бесплатное полугодовое обучение по разработке сайтов . Так как большая часть обучения была направлена на back-end, верстку осваивал сам. Но именно там я узнал о таком языке как html и о профессии веб-верстальщик. </p>
             <p>И по сегодняшний день, углубляюсь в стандарты верстки с всевозможными инструментами.
             </p>
-           
-            
-             <p> На даний момент являюсь верстальщиком в web-студии "Коуч шип"</p>
+
+
+            <p> На даний момент являюсь верстальщиком в web-студии "Коуч шип"</p>
             <p> <strong>
 Профессиональные навыки:</strong> имею базовые навыки html5, css3. Знание jquery на уровне подключения плагинов и написания простых скриптов. Ознакомлен с wordpress и joomla,opencart.</p>
-             <p>Практикуюсь придерживаться кроссбраузерности IE 6 +, Safari, Opera, Chrome, FireFox.есть знания и опыт "отзывчивой верстки". Использования pixel perfect, препроцессора sass, сетки bootstrap. Верстка макетов с помощью brackets и плагина к нему extract. Пишу семантический код.</p>
+            <p>Практикуюсь придерживаться кроссбраузерности IE 6 +, Safari, Opera, Chrome, FireFox.есть знания и опыт "отзывчивой верстки". Использования pixel perfect, препроцессора sass, сетки bootstrap. Верстка макетов с помощью brackets и плагина к нему extract. Пишу семантический код.</p>
 
-            
-            <p><strong>Знание программ:</strong> робота з графическими редакторами ( Adobe: Photoshop, Adobe:Premiere pro, Avocode ), текстовыми редакторами (Notepad ++, Sublime, Brackets), Использование локального сервера (denver),  FTP-менеджер( Filezilla ) </p>
-                
+
+            <p><strong>Знание программ:</strong> робота з графическими редакторами ( Adobe: Photoshop, Adobe:Premiere pro, Avocode ), текстовыми редакторами (Notepad ++, Sublime, Brackets), Использование локального сервера (denver), FTP-менеджер( Filezilla ) </p>
+
             <figure>
                 <img src="img/Brackets.png" alt="brackets">
                 <img src="img/Sublime.png" alt="sublime">
@@ -251,13 +277,13 @@
                 <img src="img/Photoshop.png" alt="Photoshop">
                 <img src="img/sass.png" alt="sass">
                 <img src="img/denver.png" alt="denver">
-            </figure>    
-                
+            </figure>
+
             <p><strong>Образование:</strong> бакалавр, УСЗ - Учет и аудит.
 
             </p>
             <p><strong>Владение языками:</strong> украинский, русский. Английский - ниже среднего.</p>
-            <p><strong>Личные качества:</strong> ответственность, лаконичность,  прагматизм,  аккуратность.
+            <p><strong>Личные качества:</strong> ответственность, лаконичность, прагматизм, аккуратность.
 
             </p>
             <p><strong>Цель:</strong> сайт-портфолио html-верстальщика, создан с целью демонстрации работ и проектов, в которых я принимал участие ( и сам этот сайт является демонстрацией моих навыков.)</p>
@@ -268,153 +294,176 @@
         </div>
     </article>
     <article id="my_works" class="acticle_two">
-    <div class="summary_img">
-    <h2>Мои работы</h2>
-    <div class="prod">
-    <span class="prod_q prod_q_line">Все</span>
-    <span class="prod_a">Макеты</span>
-    <span class="prod_b">Продакшн</span>
-    
-    </div>
-    <ul>
-            <li class="margin_minus">
-         <div  class="portfolio">
-                <img src="img/wash.jpg" alt="" />
-                <a href="http://p97875lm.bget.ru/" class="rgba_img">
-                    <div class="container_portf">
-                        <span>Wash-support.kiev.ua</span>
-                        <small>Много недочетов, делал его без нормального знания верстки.</small>
-                        <div class="button_portf"></div>
+        <div class="summary_img">
+            <h2>Мои работы</h2>
+            <div class="prod">
+                <span class="prod_q prod_q_line">Все</span>
+                <span class="prod_a">Макеты</span>
+                <span class="prod_b">Продакшн</span>
+
+            </div>
+            <ul>
+                <li class="margin_minus">
+                    <div class="portfolio">
+                        <img src="img/wash.jpg" alt="" />
+                        <a href="http://p97875lm.bget.ru/" class="rgba_img">
+                            <div class="container_portf">
+                                <span>Wash-support.kiev.ua</span>
+                                <small>Много недочетов, делал его без нормального знания верстки.</small>
+                                <div class="button_portf"></div>
+                            </div>
+                            <div class="line_fore rgba_img_line_a"></div>
+                            <div class="line_fore rgba_img_line_b"></div>
+                            <div class="line_fore rgba_img_line_c"></div>
+                            <div class="line_fore rgba_img_line_d"></div>
+                        </a>
                     </div>
-                    <div class="line_fore rgba_img_line_a"></div>
-                    <div class="line_fore rgba_img_line_b"></div>
-                    <div class="line_fore rgba_img_line_c"></div>
-                    <div class="line_fore rgba_img_line_d"></div>
-                </a>
-            </div>   
-        </li>  
-         <li class="margin_plus">
-         <div  class="portfolio">
-             <img src="img/olump.jpg" alt="olimp" />
-             <a href="http://olympicstyle.com.ua/baseyn-z-akva-zonoyu/" class="rgba_img">
-                    <div class="container_portf">
-                        <span>olympicstyle.com.ua</span>
-                        <small>Wordpress(принимал участие в разработке, администрирование)</small>
-                        <div class="button_portf"></div>
-                    </div>
-                    <div class="line_fore rgba_img_line_a"></div>
-                    <div class="line_fore rgba_img_line_b"></div>
-                    <div class="line_fore rgba_img_line_c"></div>
-                    <div class="line_fore rgba_img_line_d"></div>
-                </a>
-            </div>   
-        </li>  
-          <li class="margin_plus">
-         <div  class="portfolio">
-             <img src="img/llg.jpg" alt="" />
-             <a href="http://www.llg-ukraine.com.ua/ru/" class="rgba_img">
-                    <div class="container_portf">
-                        <span>LLG</span>
-                        <small>(joomla)Принимал участие в разработке(css/html)</small>
-                        <div class="button_portf"></div>
-                    </div>
-                    <div class="line_fore rgba_img_line_a"></div>
-                    <div class="line_fore rgba_img_line_b"></div>
-                    <div class="line_fore rgba_img_line_c"></div>
-                    <div class="line_fore rgba_img_line_d"></div>
-                </a>
-            </div>   
-        </li>  
+                </li>
                 <li class="margin_plus">
-         <div  class="portfolio">
-             <img src="img/strij.jpg" alt="strij" />
-             <a href="http://modniy-strij.com.ua/content/strizhki-dlya-detey" class="rgba_img">
-                    <div class="container_portf">
-                        <span>modniy-strij.com.ua</span>
-                        <small>(drupal) создание 1 страницы</small>
-                        <div class="button_portf"></div>
+                    <div class="portfolio">
+                        <img src="img/olump.jpg" alt="olimp" />
+                        <a href="http://olympicstyle.com.ua/baseyn-z-akva-zonoyu/" class="rgba_img">
+                            <div class="container_portf">
+                                <span>olympicstyle.com.ua</span>
+                                <small>Wordpress(принимал участие в разработке, администрирование)</small>
+                                <div class="button_portf"></div>
+                            </div>
+                            <div class="line_fore rgba_img_line_a"></div>
+                            <div class="line_fore rgba_img_line_b"></div>
+                            <div class="line_fore rgba_img_line_c"></div>
+                            <div class="line_fore rgba_img_line_d"></div>
+                        </a>
                     </div>
-                    <div class="line_fore rgba_img_line_a"></div>
-                    <div class="line_fore rgba_img_line_b"></div>
-                    <div class="line_fore rgba_img_line_c"></div>
-                    <div class="line_fore rgba_img_line_d"></div>
-                </a>
-            </div>   
-        </li>
-          <li class="margin_minus">
-         <div  class="portfolio">
-             <img src="img/machete.jpg" alt="" />
-             <a href="https://yurch-html.github.io/portfolio/machete/" class="rgba_img">
-                    <div class="container_portf">
-                        <span>Machete</span>
-                        <small>Макет</small>
-                        <div class="button_portf"></div>
+                </li>
+                <li class="margin_plus">
+                    <div class="portfolio">
+                        <img src="img/llg.jpg" alt="" />
+                        <a href="http://www.llg-ukraine.com.ua/ru/" class="rgba_img">
+                            <div class="container_portf">
+                                <span>LLG</span>
+                                <small>(joomla)Принимал участие в разработке(css/html)</small>
+                                <div class="button_portf"></div>
+                            </div>
+                            <div class="line_fore rgba_img_line_a"></div>
+                            <div class="line_fore rgba_img_line_b"></div>
+                            <div class="line_fore rgba_img_line_c"></div>
+                            <div class="line_fore rgba_img_line_d"></div>
+                        </a>
                     </div>
-                    <div class="line_fore rgba_img_line_a"></div>
-                    <div class="line_fore rgba_img_line_b"></div>
-                    <div class="line_fore rgba_img_line_c"></div>
-                    <div class="line_fore rgba_img_line_d"></div>
-                </a>
-            </div>   
-        </li>  
-          <li class="margin_plus">
-         <div  class="portfolio">
-                <img src="http://2.bp.blogspot.com/_A1elxRNbSTA/S3lOlaul2SI/AAAAAAAAAYU/wCMDpt9SjjU/s400/Logotip+Kvadrat.jpg" alt="" />
-                <a href="#" class="rgba_img">
-                    <div class="container_portf">
-                        <span>Lorem ipsum.</span>
-                        <small>Lorem ipsum.</small>
-                        <div class="button_portf"></div>
+                </li>
+                <li class="margin_plus">
+                    <div class="portfolio">
+                        <img src="img/strij.jpg" alt="strij" />
+                        <a href="http://modniy-strij.com.ua/content/strizhki-dlya-detey" class="rgba_img">
+                            <div class="container_portf">
+                                <span>modniy-strij.com.ua</span>
+                                <small>(drupal) создание 1 страницы</small>
+                                <div class="button_portf"></div>
+                            </div>
+                            <div class="line_fore rgba_img_line_a"></div>
+                            <div class="line_fore rgba_img_line_b"></div>
+                            <div class="line_fore rgba_img_line_c"></div>
+                            <div class="line_fore rgba_img_line_d"></div>
+                        </a>
                     </div>
-                    <div class="line_fore rgba_img_line_a"></div>
-                    <div class="line_fore rgba_img_line_b"></div>
-                    <div class="line_fore rgba_img_line_c"></div>
-                    <div class="line_fore rgba_img_line_d"></div>
-                </a>
-            </div>   
-        </li>  
-          <li class="margin_minus">
-         <div  class="portfolio">
-                <img src="http://2.bp.blogspot.com/_A1elxRNbSTA/S3lOlaul2SI/AAAAAAAAAYU/wCMDpt9SjjU/s400/Logotip+Kvadrat.jpg" alt="" />
-                <a href="#" class="rgba_img">
-                    <div class="container_portf">
-                        <span>Lorem ipsum.</span>
-                        <small>Lorem ipsum.</small>
-                        <div class="button_portf"></div>
+                </li>
+                <li class="margin_minus">
+                    <div class="portfolio">
+                        <img src="img/machete.jpg" alt="" />
+                        <a href="https://yurch-html.github.io/portfolio/machete/" class="rgba_img">
+                            <div class="container_portf">
+                                <span>Machete</span>
+                                <small>Макет</small>
+                                <div class="button_portf"></div>
+                            </div>
+                            <div class="line_fore rgba_img_line_a"></div>
+                            <div class="line_fore rgba_img_line_b"></div>
+                            <div class="line_fore rgba_img_line_c"></div>
+                            <div class="line_fore rgba_img_line_d"></div>
+                        </a>
                     </div>
-                    <div class="line_fore rgba_img_line_a"></div>
-                    <div class="line_fore rgba_img_line_b"></div>
-                    <div class="line_fore rgba_img_line_c"></div>
-                    <div class="line_fore rgba_img_line_d"></div>
-                </a>
-            </div>   
-        </li>  
-        <li class="margin_plus">
-         <div  class="portfolio">
-                <img src="http://2.bp.blogspot.com/_A1elxRNbSTA/S3lOlaul2SI/AAAAAAAAAYU/wCMDpt9SjjU/s400/Logotip+Kvadrat.jpg" alt="" />
-                <a href="#" class="rgba_img">
-                    <div class="container_portf">
-                        <span>Lorem ipsum.</span>
-                        <small>Lorem ipsum.</small>
-                        <div class="button_portf"></div>
+                </li>
+                <li class="margin_minus">
+                    <div class="portfolio">
+                        <img src="img/website.jpg" alt="" />
+                        <a href="https://yurch-html.github.io/portfolio/maket/" class="rgba_img">
+                            <div class="container_portf">
+                                <span>Макет</span>
+                                <small>Макет</small>
+                                <div class="button_portf"></div>
+                            </div>
+                            <div class="line_fore rgba_img_line_a"></div>
+                            <div class="line_fore rgba_img_line_b"></div>
+                            <div class="line_fore rgba_img_line_c"></div>
+                            <div class="line_fore rgba_img_line_d"></div>
+                        </a>
                     </div>
-                    <div class="line_fore rgba_img_line_a"></div>
-                    <div class="line_fore rgba_img_line_b"></div>
-                    <div class="line_fore rgba_img_line_c"></div>
-                    <div class="line_fore rgba_img_line_d"></div>
-                </a>
-            </div>   
-        </li>
-    </ul>
+                </li>
+                <li class="margin_plus">
+                    <div class="portfolio">
+                        <img src="http://2.bp.blogspot.com/_A1elxRNbSTA/S3lOlaul2SI/AAAAAAAAAYU/wCMDpt9SjjU/s400/Logotip+Kvadrat.jpg" alt="" />
+                        <a href="#" class="rgba_img">
+                            <div class="container_portf">
+                                <span>Lorem ipsum.</span>
+                                <small>Lorem ipsum.</small>
+                                <div class="button_portf"></div>
+                            </div>
+                            <div class="line_fore rgba_img_line_a"></div>
+                            <div class="line_fore rgba_img_line_b"></div>
+                            <div class="line_fore rgba_img_line_c"></div>
+                            <div class="line_fore rgba_img_line_d"></div>
+                        </a>
+                    </div>
+                </li>
+                <li class="margin_plus">
+                    <div class="portfolio">
+                        <img src="http://2.bp.blogspot.com/_A1elxRNbSTA/S3lOlaul2SI/AAAAAAAAAYU/wCMDpt9SjjU/s400/Logotip+Kvadrat.jpg" alt="" />
+                        <a href="#" class="rgba_img">
+                            <div class="container_portf">
+                                <span>Lorem ipsum.</span>
+                                <small>Lorem ipsum.</small>
+                                <div class="button_portf"></div>
+                            </div>
+                            <div class="line_fore rgba_img_line_a"></div>
+                            <div class="line_fore rgba_img_line_b"></div>
+                            <div class="line_fore rgba_img_line_c"></div>
+                            <div class="line_fore rgba_img_line_d"></div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
-    
-    
+
+
+
+    </article>
+    <article class="article_three" id="footer">
+        <div class="phone">
+            <span class="s1">Бесплатная консультация</span>
+         
+
+            <form method="post" action="" id="formMain2" name="formMain2">
+
+                <input id="name" type="text" name="name" required="required" value="Ваше имя" onfocus="if (this.value == 'Ваше имя') {this.value=''}" onBlur="if (this.value == '') {this.value='Ваше имя'}" />
+              
+
+                <input id="telephone" type="email" name="telephone" required="required" value="Ваш Email" onfocus="if (this.value == 'Ваш Email') {this.value=''}" onBlur="if (this.value == '') {this.value='Ваш Email'}" />
+           
+                <p id="mail1">Задайте вопрос,опишите неисправность</p>
+                <textarea name="mas" id="mas" required="required" type="text" rows="5" cols="50" id="mail"></textarea>
+           
+                <input id="button" type="button" class="button11" value="Отправить" onclick="AjaxFormRequest('messegeResult2', 'formMain2', 'form/form2.php')" />
+            </form>
+            <br>
+            <div id="messegeResult2">
+                <p class="s3"></p>
+                <br>
+            </div>
+        </div>
 
     </article>
 
-
-
-    <footer id="footer"></footer>
+    <footer></footer>
 
 
 

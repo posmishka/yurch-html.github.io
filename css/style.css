@@ -40,6 +40,7 @@ body {
 
 .html img {
     width: 77%;
+
 }
 
 .css {
@@ -501,7 +502,9 @@ body {
 .social>div:hover .fa {
     color: #000;
 }
-
+.image_main h3{
+    margin: 15px 0;
+}
 
 /*========================social========================*/
 
@@ -510,7 +513,7 @@ body {
 
 .image_main {
     width: 100%;
-    margin-bottom: 40px;
+    margin: 0;
 }
 
 
@@ -518,7 +521,7 @@ body {
 
 header {
     width: 100%;
-    background: url('../img/klava.jpg') no-repeat center center;
+    background: url('../img/hend.jpg') no-repeat center center;
     -o-background-size: cover;
     -moz-background-size: cover;
          background-size: cover;
@@ -880,14 +883,20 @@ body {
 }
 
 .web_img img {
-    width: 150px;
-    opacity: 0.4;
+    width: 160px;
+    opacity: 0.8;
     margin-bottom: 30px;
  
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    -webkit-box-shadow: 0 0 10px #45b1b1;
+       -moz-box-shadow: 0 0 10px #45b1b1;
+            box-shadow: 0 0 10px #45b1b1;
 }
 
 header:after {
@@ -1278,7 +1287,7 @@ main {
 }
 
 footer {
-    min-height: 100vh;
+   height: 100px;
     border: 10px solid red;
 }
 
@@ -1510,6 +1519,8 @@ figure img {
     -moz-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
+
+    font-size: 0;
 }
 
 .acticle_two ul:after {
@@ -1580,7 +1591,202 @@ figure img {
     margin-bottom: 0;
 }
 
+/*----->button<-----*/
 
+
+
+.button {
+    height: 40px;
+    width: 180px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    background: #000027;
+    color: white;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    text-align: center;
+    cursor:pointer;
+    margin-top: 30px;
+
+}
+
+.button>div {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    position:absolute;
+
+
+}
+
+.left {
+    -webkit-transform: rotateY(-25deg);
+    -moz-transform: rotateY(-25deg);
+    transform: rotateY(-25deg);
+
+}
+.right_div{
+    right:0;  
+    z-index: 88;
+    border:2px solid white;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition:0.5s;
+    border-left:none;
+}
+.left_div{
+    left:0;
+    z-index: 99;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition:0.5s;
+    border-left:none;
+    border:2px solid white;
+    border-right:none;
+}
+
+
+.right {
+    -webkit-transform: rotateY(25deg);
+    -moz-transform: rotateY(25deg);
+    transform: rotateY(25deg);
+    border-right:none;
+
+}
+
+.left .right_div{
+    border-right:none;
+
+}
+.right .left_div{
+    border-left:none;
+
+}
+
+
+
+.perspective_button {
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+
+    display: inline-block;
+}
+
+.button:after {
+    content: '';
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    background: rgb(4, 24, 66);
+    display: inline-block;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    border:2px solid #fff;
+    border-left:none;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+
+}
+
+.button:before {
+    content: '';
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    background: rgb(4, 24, 66);
+    display: inline-block;
+    -webkit-transform-origin: 100% 0%;
+    -moz-transform-origin: 100% 0%;
+    -ms-transform-origin: 100% 0%;
+    -o-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    border:2px solid #fff;
+    border-right:none;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
+.button span{
+    color:white;
+    font-size: 18px;
+    z-index: 0;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+/*<--->Article_3<--->*/
+
+.article_three{
+    height: 100vh;
+    padding: 80px;
+    background-image: url('../img/computer-code.jpg');
+    border: 10px solid #0d2565;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+
+/*<---^^^Article_3^^^--->*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--^^^button^^^--*/
 
 
 
