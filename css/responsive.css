@@ -112,7 +112,7 @@ figure {
     .rgba_img small {
         display: none;
     }
-    header{
+   
  
     .menu_fix{
         right:5px;
@@ -279,6 +279,9 @@ figure {
 }
 
 @media (max-width:400px) {
+    .mail_bottom{
+        font-size: 12px;
+    }
     .summary p {
         text-align: left;
     }
@@ -403,6 +406,9 @@ figure {
 @media (max-height:400px) {
     .hello span {
         font-size: 30px;
+    }
+    .mail_bottom{
+        font-size: 12px;
     }
     .image_main h3{
        margin: 10px;
