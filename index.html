@@ -22,30 +22,7 @@
     <script src="js/scroll.js" defer></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,500italic,500,400italic' rel='stylesheet' type='text/css'>
-    <script>
-        function AjaxFormRequest(result_id2, formMain2, url) {
-            jQuery.ajax({
-                url: url,
-                type: "POST",
-                dataType: "html",
-                data: jQuery("#" + formMain2).serialize(),
-                success: function(response) {
-                    document.getElementById(result_id2).innerHTML = response;
-                },
-                error: function(response) {
-                    document.getElementById(result_id2).innerHTML = "<p>Возникла ошибка при отправке формы. Попробуйте еще раз</p>";
-                }
-            });
 
-            $(':input', '#formMain2')
-                .not(':button, :submit, :reset, :hidden')
-                .val('')
-                .removeAttr('checked')
-                .removeAttr('selected');
-
-
-        }
-    </script>
 </head>
 
 <body>
@@ -438,29 +415,7 @@
 
     </article>
     <article class="article_three" id="footer">
-        <div class="phone">
-            <span class="s1">Бесплатная консультация</span>
-         
-
-            <form method="post" action="" id="formMain2" name="formMain2">
-
-                <input id="name" type="text" name="name" required="required" value="Ваше имя" onfocus="if (this.value == 'Ваше имя') {this.value=''}" onBlur="if (this.value == '') {this.value='Ваше имя'}" />
-              
-
-                <input id="telephone" type="email" name="telephone" required="required" value="Ваш Email" onfocus="if (this.value == 'Ваш Email') {this.value=''}" onBlur="if (this.value == '') {this.value='Ваш Email'}" />
-           
-                <p id="mail1">Задайте вопрос,опишите неисправность</p>
-                <textarea name="mas" id="mas" required="required" type="text" rows="5" cols="50" id="mail"></textarea>
-           
-                <input id="button" type="button" class="button11" value="Отправить" onclick="AjaxFormRequest('messegeResult2', 'formMain2', 'form/form2.php')" />
-            </form>
-            <br>
-            <div id="messegeResult2">
-                <p class="s3"></p>
-                <br>
-            </div>
-        </div>
-
+        <iframe width="100%" height="100%" scrolling="no" src="form/forma2.html" frameborder="0"></iframe>
     </article>
 
     <footer></footer>
