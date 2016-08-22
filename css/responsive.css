@@ -113,11 +113,7 @@ figure {
         display: none;
     }
     header{
-        background-image: url('../img/hend.jpg');
-    }
-    .acticle_two {
-        background-image: url('../img/platamobil.jpg');
-    }
+ 
     .menu_fix{
         right:5px;
     }
