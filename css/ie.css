@@ -1,5 +1,5 @@
 
-body *, .button{display:none;}
+body *, .button, .mail_bottom{display:none;}
 
 .ie_container, .ie_container img {display: inline-block;
 }
@@ -7,6 +7,8 @@ body, html{
 text-align: center;
     padding: 0;
     height: 100%;
+    width: 100%;
+    overflow: hidden;
     
 }
 .ie-none{
