@@ -94,6 +94,24 @@ figure {
 }
 
 @media (max-width:850px) {
+    .contact_form>div>span{
+        display: block;
+        text-align: left;
+    }
+    
+    .article_three{
+        border-width: 5px;
+            padding: 20px;
+    }
+    .contact_form{
+        padding: 15px;
+    }  
+    
+    
+    
+    
+    
+    
     .code h1 {
         font-size: 40px;
     }
@@ -202,6 +220,12 @@ figure {
 }
 
 @media (max-width:550px) {
+    .contact_form>div>span{
+        font-size: 14px;
+    }   
+    
+    
+    
     .code h1 {
         font-size: 30px;
     }
@@ -241,6 +265,16 @@ figure {
 }
 
 @media (max-width:470px) {
+    
+    .row p{
+        font-size: 9px;
+        
+    }   
+    .row img{
+        display:none;
+    }
+    
+    
     .summary:before {
         border-left: 40px solid transparent;
         border-bottom: 40px solid white;
