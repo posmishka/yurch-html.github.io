@@ -223,8 +223,12 @@ figure {
     .contact_form>div>span{
         font-size: 14px;
     }   
-    
-    
+    .row p{
+        font-size: 12px;
+    }
+    .row img{
+        width: 25px;
+    }
     
     .code h1 {
         font-size: 30px;
@@ -386,6 +390,10 @@ figure {
 }
 
 @media (max-height:450px) {
+    .contact_form>div>span {
+  
+    margin: 10px;
+}
     .menu_main {
         display: block;
     }
