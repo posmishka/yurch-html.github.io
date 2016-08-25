@@ -157,8 +157,7 @@ body {
     -ms-transform: rotateY( 180deg);
     -moz-transform: rotateY( 180deg);
     transform: rotateY( 180deg);
-    -webkit-box-shadow: -3px 0px 11px -3px #1d79f3;
-         box-shadow: -3px 0px 11px -3px #1d79f3;
+    
     ;
 }
 
@@ -473,7 +472,7 @@ body {
     display: inline-block;
     margin-top: 15px;
     -webkit-box-shadow: 0 0 10px white;
-         box-shadow: 0 0 10px white;
+         box-shadow: 0 0 5px white;
 }
 
 .social a {
@@ -1884,8 +1883,9 @@ line-height: 50px;
         
 }
 .row img{
-    width: 40px;
+ 
         vertical-align: middle;
+        margin-right: 20px;
 }
 
 .mail_bottom a{
@@ -1893,9 +1893,14 @@ line-height: 50px;
     color:#fff;
 }
 
-
-
-
+.plus {
+    margin: 20px;
+    width: 170px;
+    overflow: hidden;
+    display: inline-block;
+    height: 35px;
+    margin-bottom: 0;
+}
 
 
 

@@ -47,6 +47,19 @@ figure {
 }
 
 @media (max-width:950px) {
+    .contact_form>div>span{
+        margin: 10px;
+    }
+    
+    
+    .contact_form h2{
+        font-size: 20px;
+    }
+  .contact_form span>span,  .contact_form>div>span{
+        font-size: 14px;
+    }
+    
+    
     .code h1 {
         font-size: 45px;
     }
@@ -168,6 +181,7 @@ figure {
 }
 
 @media (max-width:650px) {
+    .row a[href="https://metrika.yandex.ru/stat/?id=39212090&from=informer"]{display:none}
     .code h1 {
         font-size: 30px;
     }
@@ -390,6 +404,13 @@ figure {
 }
 
 @media (max-height:450px) {
+    .contact_form h2{
+        font-size: 20px;
+    }
+  .contact_form span>span,  .contact_form>div>span{
+        font-size: 14px;
+    }
+    
     .contact_form>div>span {
   
     margin: 10px;
@@ -446,6 +467,17 @@ figure {
 }
 
 @media (max-height:400px) {
+
+    .slide_menu ul li a {
+    font-size: 12px;
+    }
+    
+    .slide_menu ul li a i{ 
+    font-size: 12px;
+
+    }
+
+    
     .hello span {
         font-size: 30px;
     }
@@ -454,10 +486,10 @@ figure {
     }
     .image_main h3{
        margin: 10px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .image_main img {
-        width: 120px;
+        width:90px;
     }
     .slide_menu ul li a i {
         padding-left: 30px;
