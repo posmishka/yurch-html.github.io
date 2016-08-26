@@ -185,6 +185,14 @@ figure {
     .code h1 {
         font-size: 30px;
     }
+    .row img{
+    margin-right: 5px;
+    width: 45px;
+}
+    
+    
+    
+    
     .welcome {
         font-size: 16px;
     }

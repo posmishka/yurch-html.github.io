@@ -1885,7 +1885,8 @@ line-height: 50px;
 .row img{
  
         vertical-align: middle;
-        margin-right: 20px;
+           margin-right: 10px;
+    width: 60px;
 }
 
 .mail_bottom a{
@@ -1901,7 +1902,9 @@ line-height: 50px;
     height: 35px;
     margin-bottom: 0;
 }
-
+iframe{
+    display: none;
+}
 
 
 
