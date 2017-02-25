@@ -2472,6 +2472,14 @@ header:before {
   transform-origin: 50% 0%;
 }
 
+.links-skils>ul>li{
+	list-style-type: none;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.links-skils>ul>li:last-child{
+	margin: 0;
+}
 /* line 1891, ../sass/_style.scss */
 .offer .fa {
   font-size: 30px;
@@ -2541,6 +2549,34 @@ iframe {
 figure {
   margin: 0 30px;
 }
+
+.prof{
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+
+.skil-title{
+	color: #e64d26;
+	display: block;
+	font-size: 16px;
+	margin-bottom: 15px;
+
+}
+
+.skil-list>li{
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+.skil-list>li:last-child{
+	margin: 0;
+}
+
+.skil-list{
+	padding-left: 18px;
+}
+
+
 
 @media (max-width: 1270px) {
   /* line 10, ../sass/_responsive.scss */
