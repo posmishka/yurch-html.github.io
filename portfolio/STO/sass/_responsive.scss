@@ -31,12 +31,41 @@
 	.logo img {
     width: 110px;
 }
-
+	.morning__item {
+    padding: 0 2px;
+    width: 20%;
+    margin-bottom: 4px;
+}
 }
 
 @media (max-width: 1400px) {
 	.head-number{
 		padding: 0 5px;
+	}
+	.morning__item {
+    padding: 0 2px;
+    width: 25%;
+    margin-bottom: 4px;
+}
+	.application-item__desc{
+		font-size: 12px;
+	}
+	.application-form-inputs__morning-title {
+    font-size: 15px;
+	}
+	.morning__item label{
+		font-size: 12px;
+	}
+	.type-select__select {
+    width: 200px;
+    height: 45px;
+    font-size: 14px;
+    color: grey;
+    padding: 0 5px;
+}
+
+	.form-top__select-brend, .form-top__select-type, .form-top__select-mod, .form-top__select-year{
+		font-size: 14px;
 	}
 	.services-form {
     padding: 20px 30px;
@@ -63,7 +92,7 @@
     padding-left: 35px;
 }
 	.logo {
-    width: 115px;
+    width: 99px;
     overflow: hidden;
     position: relative;
     -webkit-transition: .3s;
@@ -124,9 +153,7 @@
 	.services-link__title{
 		font-size: 14px;
 	}
-	.processes__list {
-    width: 45%;
-	}
+
 	.footer-page__logo a {
     width: 100px;
 }
@@ -155,10 +182,42 @@
 	.header-page__top{
 		padding: 10px 20px;
 	}
+	.form-top__select-year {
+    width: 60px;
+    height: 40px;
+    font-size: 16px;
+    color: grey;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+	.form-top__select-brend, .form-top__select-type, .form-top__select-mod {
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
+    color: grey;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+	.type-select__select{
+		height: 40px;
+	}
 }
 @media (max-width: 1200px) {
 	.header-page__info-head-ico.header-page__info-head-ico--mobil-none{
 		display: none;
+	}
+	.processes{
+		display: none;
+	}
+	.application-item{
+		width: 100%;
+	}
+	.application-form-list{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 	.services-description{
 		-webkit-flex-direction: column;
@@ -168,6 +227,64 @@
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		flex-direction: column;
+	}
+	.application-form-list__item{
+		width: 100%;
+		margin-bottom: 30px;
+		&:last-child{
+			margin: 0;
+		}
+	}
+	.form-top__inputs{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-direction: column;
+		-webkit-box-pack: start;
+		-webkit-justify-content: flex-start;
+		-moz-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		width: 100%;
+		&>*{
+			width: 100%;
+		}
+	}
+	.form-top__select-brend, .form-top__select-type, .form-top__select-mod{
+		margin: 0;
+		margin-bottom: 5px;
+		height: 30px;
+	}
+	.form-top__inputs-text{
+		margin: 0;
+		font-size: 15px;
+	}
+	.form-top__select-year{
+		    margin: 0;
+    margin-bottom: 5px;
+    height: 30px;
+	}
+	.form-top{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-direction: column;
+	}
+	.application-item__desc{
+		height: auto;
+	}
+	.application-item__title{
+		-webkit-box-pack: start;
+		-webkit-justify-content: flex-start;
+		-moz-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
 	}
 	.services-description__left{
 		width: 100%;
@@ -470,7 +587,7 @@
     width: 100%;
 }
 	.logo{
-		width: 50%;
+		width: 80%;
 	}
 	.page-title{
 		font-size: 22px;
