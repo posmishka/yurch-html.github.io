@@ -3015,7 +3015,21 @@ figure {
   .code h1 {
     font-size: 33px;
   }
+  header{
+        background: url(../img/henda-mob.jpg) no-repeat right bottom;
+        -webkit-background-size: cover;
+        background-size: cover;
+  }
+  body{
+    background-image: url('../img/cat-mob.jpg');
+  }
 
+  .acticle_one, .article_three{
+    background-image: url('../img/code-mob.jpg');
+  }
+  .figure{
+    display: none;
+  }
   /* line 330, ../sass/_responsive.scss */
   .welcome {
     font-size: 16px;
@@ -3136,21 +3150,7 @@ figure {
   .contact_form h2 {
     font-size: 20px;
   }
-  header{
-        background: url(../img/henda-mob.jpg) no-repeat right bottom;
-        -webkit-background-size: cover;
-        background-size: cover;
-  }
-  body{
-    background-image: url('../img/cat-mob.jpg');
-  }
 
-  .acticle_one, .article_three{
-    background-image: url('../img/code-mob.jpg');
-  }
-  .figure{
-    display: none;
-  }
   /* line 418, ../sass/_responsive.scss */
   .contact_form span > span, .contact_form > div > span {
     font-size: 14px;
