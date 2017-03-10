@@ -1840,11 +1840,10 @@ footer {
 
 /* line 1267, ../sass/_style.scss */
 .acticle_two {
-  background-image: url("../img/motto.net.ua-31637.jpg");
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: center center;
+  background: -webkit-repeating-linear-gradient(135deg,#242237 -3px,#242237 0px,rgba(62,59,94,0.88) 3px,rgba(62,59,94,0.88) 3px);
+  background: -moz-repeating-linear-gradient(135deg,#242237 -3px,#242237 0px,rgba(62,59,94,0.88) 3px,rgba(62,59,94,0.88) 3px);
+  background: -o-repeating-linear-gradient(135deg,#242237 -3px,#242237 0px,rgba(62,59,94,0.88) 3px,rgba(62,59,94,0.88) 3px);
+  background: repeating-linear-gradient(-45deg,#242237 -3px,#242237 0px,rgba(62,59,94,0.88) 3px,rgba(62,59,94,0.88) 3px);
   border: none;
 }
 
@@ -2901,7 +2900,9 @@ figure {
   .contact_form > div > span {
     font-size: 14px;
   }
-
+.menu_fix{
+  display: none;
+}
   /* line 248, ../sass/_responsive.scss */
   .row p {
     font-size: 12px;
