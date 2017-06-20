@@ -37,7 +37,7 @@ $(document).ready(function() {
 
     //	TABPAGES
 
-    $('.works, .button-animation__link').click(function() {
+	$('.mywork, .button-animation__link').click(function() {
         $('.portfolio').addClass('active');
         $('.use').removeClass('active');
         $('.contact').removeClass('active');
