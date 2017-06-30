@@ -32,7 +32,6 @@ $(document).ready(function(){
 	$(".owl-carousel-2").slick({
 		infinite: true,
 		slidesToScroll: 1,
-		centerMode: true,
 		slidesToShow: 8,
 		responsive: [
 			{

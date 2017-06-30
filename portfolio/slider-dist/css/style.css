@@ -548,15 +548,11 @@ img {
   display: flex; }
 
 .main-banner__item {
-  padding-bottom: 56%;
   position: relative; }
 
 .main-banner__img {
-  position: absolute;
-  left: 0;
-  top: 0;
+  padding-bottom: 56%;
   width: 100%;
-  height: 100%;
   display: block;
   background-size: cover;
   background-position: center; }
@@ -574,7 +570,7 @@ img {
 .prev-banner {
   position: relative; }
 
-.owl-prev, .owl-next {
+.slick-prev, .slick-next {
   font-size: 1px;
   position: absolute;
   top: 0;
@@ -585,12 +581,15 @@ img {
   z-index: 2;
   margin: auto;
   -webkit-transition: background .3s;
-  transition: background .3s; }
-  .owl-prev:hover, .owl-next:hover {
+  transition: background .3s;
+  border: none;
+  cursor: pointer;
+  outline: none; }
+  .slick-prev:hover, .slick-next:hover {
     background: #fff; }
-    .owl-prev:hover:before, .owl-next:hover:before {
+    .slick-prev:hover:before, .slick-next:hover:before {
       border-color: #202020; }
-  .owl-prev:before, .owl-next:before {
+  .slick-prev:before, .slick-next:before {
     content: '';
     position: absolute;
     top: 0;
@@ -607,16 +606,16 @@ img {
     -webkit-transition: border-color .3s;
     transition: border-color .3s; }
 
-.owl-prev {
+.slick-prev {
   left: 0; }
-  .owl-prev:before {
+  .slick-prev:before {
     border-bottom: none;
     border-left: none;
     left: 4px; }
 
-.owl-next {
+.slick-next {
   right: 0; }
-  .owl-next:before {
+  .slick-next:before {
     border-top: none;
     border-right: none;
     left: -4px; }
@@ -738,18 +737,19 @@ img {
 .brend-baner {
   position: relative; }
 
-.brand-baner__item {
+.brand-baner__wp-img {
   padding-bottom: 40%;
   position: relative; }
 
-.brand-baner .owl-item .brand-baner__pic {
+.brand-baner__pic {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
   margin: auto;
-  width: auto; }
+  width: auto;
+  max-height: 100%; }
 
 .prev-ban-item__pic {
   position: absolute;
@@ -758,7 +758,8 @@ img {
   bottom: 0;
   right: 0;
   margin: auto;
-  width: auto; }
+  width: auto;
+  max-height: 100%; }
 
 .brand-baner {
   padding: 20px 0; }
