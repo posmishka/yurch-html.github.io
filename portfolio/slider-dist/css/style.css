@@ -551,7 +551,9 @@ img {
 
 .banner-sect__carousel {
   width: 75%;
-  padding-right: 5px; }
+  padding-right: 5px;
+  max-height: 500px;
+  overflow: hidden; }
 
 .banner-sect__prev-category {
   width: 25%;
@@ -775,7 +777,9 @@ img {
   max-height: 100%; }
 
 .brand-baner {
-  padding: 20px 0; }
+  padding: 20px 0;
+  max-height: 120px;
+  overflow: hidden; }
 
 .brand-baner__slider {
   padding: 0 20px; }
