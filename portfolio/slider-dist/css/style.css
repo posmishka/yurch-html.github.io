@@ -1822,4 +1822,6 @@ html {
     margin: 0; }
   .mail-form__btn {
     width: 50px;
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  .slick-next, .slick-prev {
+    font-size: .7px; } }
