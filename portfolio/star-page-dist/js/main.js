@@ -15,7 +15,16 @@ $(document).ready(function() {
         infinite: true,
         slidesToScroll: 1,
         centerMode: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+		responsive: [{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerMode: false,
+				infinite: true
+			}
+		}]
     });
     //	BRaND-SLIDER	
     $(".owl-carousel-2").slick({
@@ -37,7 +46,7 @@ $(document).ready(function() {
 
 
     //	ancor
-    jQuery("a[href^='#']").click(function() {
+	jQuery(".link-top").click(function() {
         var elementClick = jQuery(this).attr("href");
         var destination = jQuery(elementClick).offset().top;
         jQuery("html, body").animate({
