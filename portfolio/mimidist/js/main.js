@@ -13,6 +13,14 @@ $(document).ready(function () {
 		$('.main-page__wrap').removeClass('js-33 js-66 js-0').addClass( $(this).attr('id') );
 	});
 	
+	
+	$('.nav-slider__click').click(function(){
+		$('.line').removeClass('js-33 js-66 js-0').addClass( $(this).attr('id') );
+	});
+	
+	
+	
+	
 	//	product-card-SLIDER	
 	$(".slick-slider-1").slick({
 		infinite: true,
