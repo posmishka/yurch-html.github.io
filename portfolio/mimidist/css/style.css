@@ -674,29 +674,24 @@ svg {
     margin-bottom: 7px;
     width: 100%;
     z-index: -1;
-    position: relative; }
+    position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
+    left: 0; }
     .bg-main > b.line.z-ind {
       z-index: 1; }
-    .bg-main > b.line:before {
-      content: '';
-      position: absolute;
-      height: 100%;
-      background: #fff;
-      display: block;
-      right: 0;
-      width: 0; }
-  .bg-main .fff-line-1.js-0:before {
-    width: 100%; }
-  .bg-main .fff-line-1.js-0.z-ind {
-    left: -75px; }
-  .bg-main .fff-line-2.js-33:before {
-    width: 100%; }
-  .bg-main .fff-line-2.js-33.z-ind {
-    left: -75px; }
-  .bg-main .fff-line-3.js-66:before {
-    width: 100%; }
-  .bg-main .fff-line-3.js-66.z-ind {
-    left: -105px; }
+  .bg-main .fff-line-1.js-0 {
+    background: #fad9c2; }
+    .bg-main .fff-line-1.js-0.z-ind {
+      left: -75px; }
+  .bg-main .fff-line-2.js-33 {
+    background: #fad9c2; }
+    .bg-main .fff-line-2.js-33.z-ind {
+      left: -75px; }
+  .bg-main .fff-line-3.js-66 {
+    background: #fad9c2; }
+    .bg-main .fff-line-3.js-66.z-ind {
+      left: -105px; }
 
 .nav-slider__item:not(:last-child) {
   margin-bottom: 5px; }
@@ -713,7 +708,7 @@ svg {
 
 .video-wrap {
   background: #b25e25;
-  padding-bottom: 78%;
+  padding-bottom: 78.56%;
   position: relative;
   overflow: hidden;
   margin-left: -15px; }
