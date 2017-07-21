@@ -519,7 +519,9 @@ svg {
   line-height: .6;
   top: .6em;
   z-index: 2;
-  display: block; }
+  display: block;
+  -webkit-transition: color .3s;
+  transition: color .3s; }
   .clip__text::-moz-selection {
     background: transparent; }
   .clip__text::selection {
@@ -541,6 +543,8 @@ svg {
     -webkit-transform: rotate(25deg) translateX(-41em) translateY(22em);
         -ms-transform: rotate(25deg) translateX(-41em) translateY(22em);
             transform: rotate(25deg) translateX(-41em) translateY(22em); }
+  .header-page.active .clip__input + .clip__cont .clip__text {
+    color: #fad9c2; }
 
 @-webkit-keyframes clip {
   from {
@@ -670,26 +674,26 @@ svg {
   .bg-main > b {
     display: block;
     height: 1px;
-    background: #000;
     margin-bottom: 7px;
     width: 100%;
     z-index: -1;
     position: relative;
-    -webkit-transition: .3s;
-    transition: .3s;
-    left: 0; }
+    -webkit-transition: left .3s, border-color .3s;
+    transition: left .3s, border-color .3s;
+    left: 0;
+    border-bottom: 1px solid #000; }
     .bg-main > b.line.z-ind {
-      z-index: 1; }
+      z-index: 2; }
   .bg-main .fff-line-1.js-0 {
-    background: #fad9c2; }
+    border-color: #fad9c2; }
     .bg-main .fff-line-1.js-0.z-ind {
       left: -75px; }
   .bg-main .fff-line-2.js-33 {
-    background: #fad9c2; }
+    border-color: #fad9c2; }
     .bg-main .fff-line-2.js-33.z-ind {
       left: -75px; }
   .bg-main .fff-line-3.js-66 {
-    background: #fad9c2; }
+    border-color: #fad9c2; }
     .bg-main .fff-line-3.js-66.z-ind {
       left: -105px; }
 
@@ -771,7 +775,9 @@ svg {
   cursor: pointer;
   position: relative;
   height: 27px;
-  display: inline-block; }
+  display: inline-block;
+  -webkit-transition: color .3s;
+  transition: color .3s; }
 
 .nav-slider__item.active {
   color: #fad9c2; }
