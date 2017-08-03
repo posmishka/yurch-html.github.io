@@ -1,0 +1,259 @@
+.catalogue{
+	width: 100%;
+}
+
+.catalogue__wrap{
+	display: flex;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.catalogue__item{
+	width: 33.33%;
+	&:nth-child(2){
+		.catalogue-item{
+		border-left: 1px solid $orange;
+		border-right: 1px solid $orange;
+	}
+
+	}
+}
+
+
+
+.catalogue-item{
+	background-color: #b25e25;
+	padding-bottom: 149%;
+	position: relative;
+	transform-style: preserve-3d;
+
+	
+	transition: transform .6s;
+	z-index: 0;
+	
+	&.rotate{
+		transform:rotateY(180deg);
+		.catalogue-item__back{
+			backface-visibility: visible;
+		}
+		.catalogue-item__front{
+			z-index: -1;
+		}
+	}
+}
+
+.catalogue-item__front, .catalogue-item__back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.catalogue-item__front{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	background: #b25e25;
+	cursor: pointer;
+	transition: visibility .5s;
+}
+
+
+.catalogue-item__sub{
+	color: $orange;
+	font-family: "LCChalk", sans-serif;
+	font-size: 19px;
+}
+
+.catalogue-title{
+	color: #ed7f34;
+	font-size: 54px;
+	letter-spacing: .03em;
+
+}
+
+
+.catalogue-item__sub, .catalogue-title{
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+
+.catalogue-item__front:hover{
+	.catalogue-item__sub, .catalogue-title{
+		opacity: 1;
+	}
+}
+
+.catalogue-item__img{
+	display: block;
+	padding-bottom: 96.5%;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+
+.catalogue-item__img-wp{
+	width: 100%;
+}
+
+.catalogue-item__img--girl{
+	background-image: url('../img/catalogue/girl.png');
+	background-size: 41%;
+	background-position: center 59%;
+}
+
+.catalogue-item__img--parents{
+	background-image: url('../img/catalogue/lamp.png');
+	background-size: 34%;
+	background-position: center 64%;
+}
+
+
+
+.catalogue-item__img--office{
+	background-image: url('../img/catalogue/finger.png');
+	background-size: 24%;
+	background-position: center 58%;
+}
+
+
+.catalogue-item__back{
+	background-color: $orange;
+	transform: rotateY(180deg);
+	z-index: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-left: 34px;
+	
+	background-repeat: no-repeat;
+	background-image: 
+		url('../img/catalogue/sun.svg'), 
+		url('../img/catalogue/hand.svg' ),
+		url('../img/catalogue/girl.svg' ),
+		url('../img/catalogue/flw.svg' ),
+		url('../img/catalogue/fffssss.svg' );
+	
+	background-position: 
+		right top,
+		left top,
+		88% bottom,
+		18.5% bottom,
+		43.5% 83.5%;
+	
+	background-size: 
+		34%,
+		18%,
+		34%,
+		21%,
+		8%;
+	
+	
+	&:before, &:after, .catalogue-list:before{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		background-image: url('../img/catalogue/bfl.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: -1;
+		
+	}
+	&:before{
+		top: 15.3%;
+		left: 38.8%;
+		transform: rotate(199deg);
+		background-size: 84%;
+	}
+	
+	&:after{
+		top: 46.8%;
+		left: 62.8%;
+		transform: rotate(-83deg);
+		background-size: 73%;
+	}
+	
+	.catalogue-list:before{
+		bottom: 34%;
+		right: 12%;
+		transform: rotate(0deg);
+		background-size: 64%;
+	}
+}
+
+.catalogue-list{
+	font-family: "LCChalk", sans-serif;
+	font-size: 28px;
+	letter-spacing: .04em;
+}
+
+
+.catalogue-list__item:not(:last-child){
+	margin-bottom: 28px;
+}
+
+.blot{
+	display: inline-block;
+	height: 1em;
+	width: 1em;
+	vertical-align: middle;
+	margin-left: -.3em;
+	margin-right: -.2em;
+	position: relative;
+	
+	
+	&:before, &:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: opacity .3s;
+	}
+	
+	&:before{
+		background-image: url('../img/catalogue/blot.svg');
+	}
+	
+	&:after{
+		background-image: url('../img/catalogue/blotfff.svg');
+		opacity: 0;
+	}
+	
+}
+
+.catalogue-list__link{
+	transition: color .3s;
+}
+
+.catalogue-list__link:hover{
+	color: $fff;
+	
+	.blot:after{
+		opacity: 1;
+	}
+	
+	.blot:before{
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+
