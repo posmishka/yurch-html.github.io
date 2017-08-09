@@ -1,0 +1,111 @@
+.header-page{
+	padding: 24px 0;
+	
+	& > .container{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.logo{
+	display: block;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.main-nav>ul{
+	display: flex;
+	
+	& > li{
+		margin-right: 56px;
+		padding-top: 7px;
+		&:last-child{
+			margin: 0;
+		}
+		
+		&.active > a{
+			color: $yellow;
+			
+			&:before{
+				width: 100%;
+			}
+		}
+	}
+	
+	& > li > a{
+		font-size: 14px;
+		text-transform: uppercase;
+		padding-bottom: 11px;
+		transition: color .3s;
+		position: relative;
+		
+		&:before{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 3px;
+			background: currentColor;
+			transition: width .3s;
+		}
+		
+		&:hover{
+			color: $yellow;
+			
+			&:before{
+				width: 100%;
+			}
+		}
+	}
+}
+
+.score-sect{
+	display: flex;
+	align-items: center;
+}
+
+.header-page--menu{
+	display: flex;
+	align-items: center;
+}
+
+.score-sect--item:not(:last-child){
+	margin-right: 41px;
+}
+
+.score-item{
+	display: block;
+	
+	&:hover{
+		svg{
+			fill: $yellow;
+		}
+	}
+}
+
+.score-item--ico{
+	display: block;
+	width: 17px;
+	height: 20px;
+}
+
+.header-page--cart{
+	padding-left: 55px;
+	padding-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
