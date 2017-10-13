@@ -10,11 +10,33 @@
 
 .catalogue__item{
 	width: 33.33%;
+	position: relative;
 	&:nth-child(2){
-		.catalogue-item{
-		border-left: 1px solid $orange;
-		border-right: 1px solid $orange;
-	}
+		&:before{
+			border-left: 1px solid $orange;
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 1px;
+			box-sizing: border-box;
+			z-index: 2;
+		}
+		
+		&:after{
+			border-right: 1px solid $orange;
+			content: '';
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 1px;
+			box-sizing: border-box;
+			z-index: 2;
+		}
 
 	}
 }
@@ -25,19 +47,23 @@
 	background-color: #b25e25;
 	padding-bottom: 149%;
 	position: relative;
-	transform-style: preserve-3d;
-
+	cursor: pointer;
 	
-	transition: transform .6s;
+	transition: transform 1.5s;
 	z-index: 0;
 	
 	&.rotate{
-		transform:rotateY(180deg);
+		transform:rotateY(360deg);
 		.catalogue-item__back{
-			backface-visibility: visible;
+			opacity: 1;
+			visibility: visible;
 		}
 		.catalogue-item__front{
-			z-index: -1;
+			opacity: 0;
+		}
+		
+		.catalogue-item__img{
+			opacity: .5;
 		}
 	}
 }
@@ -48,8 +74,8 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	backface-visibility: hidden;
 }
+
 
 .catalogue-item__front{
 	display: flex;
@@ -58,10 +84,185 @@
 	text-align: center;
 	flex-direction: column;
 	background: #b25e25;
-	cursor: pointer;
-	transition: visibility .5s;
+	transition:  opacity .1s;
+	transition-delay: .5s;
+	z-index: 0;
 }
 
+.rotate .catalogue-item__back {
+	transition-delay: .6s;
+}
+
+.catalogue-item--kids{
+	.catalogue-item__back{
+		background-image: 
+			url('../img/catalogue/sun.svg'), 
+			url('../img/catalogue/hand.svg' ),
+			url('../img/catalogue/girl.svg' ),
+			url('../img/catalogue/flw.svg' ),
+			url('../img/catalogue/fffssss.svg' );
+
+		background-position: 
+			right top,
+			left top,
+			88% bottom,
+			18.5% bottom,
+			43.5% 83.5%;
+
+		background-size: 
+			34%,
+			18%,
+			34%,
+			21%,
+			8%;
+
+
+		&:before, &:after, .catalogue-list:before{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			background-image: url('../img/catalogue/bfl.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			z-index: 3;
+
+		}
+		&:before{
+			top: 15.3%;
+			left: 38.8%;
+			transform: rotate(199deg);
+			background-size: 84%;
+		}
+		
+		&:after{
+			top: 46.8%;
+			left: 62.8%;
+			transform: rotate(-83deg);
+			background-size: 73%;
+		}
+
+		.catalogue-list:before{
+			bottom: 34%;
+			right: 12%;
+			transform: rotate(0deg);
+			background-size: 64%;
+		}
+	}
+}
+
+
+.catalogue-item.catalogue-item--office{
+	.catalogue-list{
+		text-align: right;
+	}
+	.catalogue-item__back{
+		align-items: flex-end;
+		padding-right: 63px;
+		padding-bottom: 63px;
+	}
+	
+	.catalogue-list__item:not(:last-child) {
+		margin-bottom: 31px;
+	}
+	
+	.catalogue-item__back{
+		background-image: 
+			url('../img/catalogue/xoxo.svg'),
+			url('../img/catalogue/coffee.svg'),
+			url('../img/catalogue/enter.svg');
+
+		background-position: 
+			68% 92%,
+			14% 72%,
+			-15% 0;
+
+		background-size: 
+			34%,
+			30%,
+			91.5%;
+	}
+}
+
+
+.catalogue-item--parents{
+	.catalogue-list__item:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.catalogue-list{
+		text-align: center;
+		padding-bottom: 62px;
+}
+	
+	.catalogue-item__back{
+		background-image: 
+			url('../img/catalogue/moon.svg'), 
+			url('../img/catalogue/bulb.svg' ),
+			url('../img/catalogue/littlegirl.svg' ),
+			url('../img/catalogue/cat.svg' ),
+			url('../img/catalogue/books.svg' ),
+			
+			
+			url('../img/catalogue/star.svg' ),
+			url('../img/catalogue/star.svg' ),
+			url('../img/catalogue/star.svg' ),
+			url('../img/catalogue/star.svg' ),
+			url('../img/catalogue/star.svg' ),
+			url('../img/catalogue/star.svg' );
+		
+		
+
+		background-position: 
+			5% 2%,
+			10% 34%,
+			126% 104%,
+			28% 100%,
+			-9.7% 105.5%,
+			
+			
+			47.3% 5.5%,
+			94.3% 5.5%,
+			74.2% 17.3%,
+			40.2% 23.4%,
+			87.2% 39.4%,
+			7% 38.2%;
+
+		background-size: 
+			30%,
+			18.5%,
+			87.5%,
+			21.5%,
+			30.8%,
+			
+			
+			8.2%,
+			5.2%,
+			6.2%,
+			5.2%,
+			5.2%,
+			4.1%;
+	}
+	
+}
+
+
+
+.catalogue-item__back{
+	opacity: 0;
+	background-color: $orange;
+	cursor: pointer;
+	z-index: auto;
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: opacity  .2s, visibility .2s;
+	transition-delay: .3s;
+	background-repeat: no-repeat;
+	
+}
 
 .catalogue-item__sub{
 	color: $orange;
@@ -83,7 +284,7 @@
 }
 
 
-.catalogue-item__front:hover{
+.catalogue-item:hover{
 	.catalogue-item__sub, .catalogue-title{
 		opacity: 1;
 	}
@@ -94,6 +295,7 @@
 	padding-bottom: 96.5%;
 	width: 100%;
 	background-repeat: no-repeat;
+	transition: opacity .3s;
 }
 
 
@@ -122,72 +324,6 @@
 }
 
 
-.catalogue-item__back{
-	background-color: $orange;
-	transform: rotateY(180deg);
-	z-index: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding-left: 34px;
-	
-	background-repeat: no-repeat;
-	background-image: 
-		url('../img/catalogue/sun.svg'), 
-		url('../img/catalogue/hand.svg' ),
-		url('../img/catalogue/girl.svg' ),
-		url('../img/catalogue/flw.svg' ),
-		url('../img/catalogue/fffssss.svg' );
-	
-	background-position: 
-		right top,
-		left top,
-		88% bottom,
-		18.5% bottom,
-		43.5% 83.5%;
-	
-	background-size: 
-		34%,
-		18%,
-		34%,
-		21%,
-		8%;
-	
-	
-	&:before, &:after, .catalogue-list:before{
-		content: '';
-		display: block;
-		position: absolute;
-		width: 25px;
-		height: 25px;
-		background-image: url('../img/catalogue/bfl.svg');
-		background-repeat: no-repeat;
-		background-position: center;
-		z-index: -1;
-		
-	}
-	&:before{
-		top: 15.3%;
-		left: 38.8%;
-		transform: rotate(199deg);
-		background-size: 84%;
-	}
-	
-	&:after{
-		top: 46.8%;
-		left: 62.8%;
-		transform: rotate(-83deg);
-		background-size: 73%;
-	}
-	
-	.catalogue-list:before{
-		bottom: 34%;
-		right: 12%;
-		transform: rotate(0deg);
-		background-size: 64%;
-	}
-}
 
 .catalogue-list{
 	font-family: "LCChalk", sans-serif;
