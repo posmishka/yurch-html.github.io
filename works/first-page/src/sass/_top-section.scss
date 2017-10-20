@@ -1,0 +1,135 @@
+.top-section {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+  background-repeat: no-repeat;
+  background-image: url('../img/bg/top-sect-bg.png');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.top-section__desc {
+  position: relative;
+  z-index: 1;
+  margin: auto 0;
+  padding-top: 40px;
+}
+
+.title-sect__text {
+  @media screen and (max-width: $first-media) { 
+    width: 80%;
+  }
+}
+
+.main-title {
+  font-size: 2.500em;
+  letter-spacing: .04em;
+  line-height: 1.2;
+  font-family: $gilroy;
+  color: #fff;
+  
+  @media screen and (max-width: $threed-media) { 
+    font-size: 1.7em;
+  }
+}
+
+.main-title__main {
+  font-size: 1em;
+  font-weight: 800;
+  color: $brand-color;
+}
+
+.title-sect {
+  position: relative;
+  padding-top: 3.75rem;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -100px;
+    width: 18em;
+    height: 17.5em;
+    @include gradient();
+  }
+}
+
+.title-sect__sub-desc {
+  padding-top: .5em;
+}
+
+.title-sect__desc {
+  margin-bottom: 4rem;
+  font-size: 1.125em;
+  letter-spacing: .01em;
+  line-height: 1.4;
+  font-weight: 600;
+  color: $lightgrey;
+}
+
+.title-sect__tltle {
+  margin-bottom: 3rem;
+}
+
+.title-sect__color {
+  color: $brand-color;
+  font-weight: 800;
+}
+
+.title-sect__btn {
+  margin-bottom: 3rem;
+}
+
+.title-sect__arrow {
+  padding-left: 23px;
+}
+
+.men-dekor {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 1290px;
+  height: 80%;
+  padding: 0 3.75rem;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    right: 3.75rem;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/bg/men2.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    height: 70%;
+    width: 11%;
+    @include gradient();
+  }
+}
+
+
+
+
+
+
+
+
