@@ -1,0 +1,32 @@
+//fonts
+$gilroy: 'Gilroy', arial, sans-serif;
+$opensans: 'Open Sans', arial, sans-serif;
+$helneue: 'HelveticaNeueCyr', arial, sans-serif;
+$roboto: 'Roboto', arial, sans-serif;
+
+//color
+$menu-color: #aaaaaa;
+$brand-color: #aa62f4;
+$lightgrey: #c4c4c4;
+$dkgrey: #4b4b4b;
+$grey: #7a7a7a;
+
+//gradient
+
+$gradient: radial-gradient(#53575b 8%, transparent 3px);
+
+//@mixin
+@mixin gradient() {
+  background-image: radial-gradient(#53575b 20%, transparent 2px);
+  background-size: 10px 10px;
+}
+
+@mixin lightgradient() {
+  background-image: radial-gradient(#dbdbdb 20%, transparent 2px);
+  background-size: 10px 10px;
+}
+
+//media
+$first-media: 1030px;
+$second-media: 777px;
+$threed-media: 590px;
