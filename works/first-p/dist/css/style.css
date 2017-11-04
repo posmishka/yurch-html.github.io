@@ -551,6 +551,10 @@ body {
     .container {
       width: 100%; } }
 
+.modal-fixed {
+  overflow: hidden;
+  padding-right: 15px; }
+
 .brand-color {
   color: #aa62f4; }
 
@@ -589,7 +593,7 @@ body {
           align-items: center; }
 
 .header-page__logo {
-  margin-right: 6rem; }
+  margin-right: 5rem; }
 
 .header-page__contact {
   margin-left: auto; }
@@ -1013,6 +1017,7 @@ body {
   padding-bottom: 3rem; }
 
 .three-section {
+  overflow: hidden;
   background-image: linear-gradient(#222326, #3c3f44); }
 
 .alternative__title {
@@ -2248,6 +2253,7 @@ li.slick-active > button:after {
   margin-bottom: 1em; }
 
 .prew-step {
+  overflow: hidden;
   background-image: url("../img/bg/page3-sect1.png"), linear-gradient(#3c3f44, #232528);
   background-position: center;
   background-size: contain, cover;
@@ -2615,12 +2621,12 @@ li.slick-active > button:after {
   font-size: 1.250em; }
 
 .logo {
-  width: 4.375em; }
+  width: 11em; }
 
 .logo__link {
   position: relative;
   display: block;
-  padding-bottom: 100%; }
+  padding-bottom: 51%; }
 
 .logo_pic {
   position: absolute;
@@ -2836,7 +2842,7 @@ li.slick-active > button:after {
   text-align: center;
   letter-spacing: .04em;
   transition: border-color .3s, background-color .3s, color .3s; }
-  .btn:hover {
+  .btn:hover, .btn:focus {
     background-color: transparent;
     border: 2px solid currentColor;
     color: #aa62f4; }
@@ -3084,6 +3090,52 @@ li.slick-active > button:after {
 
 .danger-sect__text-med {
   font-weight: 500; }
+
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s; }
+  .modal-wrap.active {
+    visibility: visible;
+    opacity: 1; }
+  .modal-wrap.ok .modal-thnx--form {
+    display: none; }
+  .modal-wrap.ok .modal-thnx--ok {
+    display: block; }
+
+.modal-wrap__close {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%; }
+
+.modal-wrap__desc {
+  position: relative;
+  z-index: 3; }
+
+.modal-thnx--ok {
+  display: none; }
 
 .modal {
   position: fixed;
