@@ -1454,6 +1454,9 @@ body {
   width: 100%;
   max-width: 488px;
   padding-right: 13.250rem; }
+  @media screen and (max-width: 777px) {
+    .about-section__img {
+      margin-bottom: 50px; } }
 
 .about-section__top {
   display: -webkit-box;
