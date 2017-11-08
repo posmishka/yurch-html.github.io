@@ -1453,7 +1453,8 @@ body {
 .about-section__img {
   width: 100%;
   max-width: 488px;
-  padding-right: 13.250rem; }
+  padding-right: 110px;
+  overflow: hidden; }
   @media screen and (max-width: 777px) {
     .about-section__img {
       margin-bottom: 50px; } }
@@ -1547,13 +1548,14 @@ body {
   margin-bottom: 3rem; }
 
 .comment-item {
-  padding: 20px;
   margin: 15px;
   border: 1px solid #c4c4c4;
   transition: boder-color .3s, box-shadow .3s; }
   .comment-item:hover, .comment-item:focus {
     box-shadow: 0 0 20px #c4c4c4;
     border-color: transparent; }
+  .comment-item .file-img {
+    padding-bottom: 140%; }
 
 .comment-item__user {
   display: -webkit-box;
@@ -1602,7 +1604,8 @@ body {
     border: none;
     background-color: transparent;
     font-size: 0;
-    width: 34px; }
+    width: 34px;
+    height: 34px; }
     .slick-dots button:before {
       counter-increment: slider;
       content: counter(slider, decimal-leading-zero) ".";
@@ -1636,6 +1639,9 @@ li.slick-active > button:after {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   padding-top: 3.3rem; }
 
 .sect-step.sect-step--3 {
