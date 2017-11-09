@@ -1881,7 +1881,7 @@ li.slick-active > button:after {
   padding: 6.5rem 0;
   background-repeat: no-repeat;
   background-image: url("../img/bg/men2.png"), linear-gradient(#fff, #e3e3e3);
-  background-size: 18%, 100%;
+  background-size: auto 90%, 100%;
   background-position: right bottom, center; }
   @media screen and (max-width: 1030px) {
     .sect-files {
@@ -2542,7 +2542,6 @@ li.slick-active > button:after {
   margin-right: 1em; }
 
 .about-section--min {
-  padding-top: 0;
   background-image: url("../img/bg/officee.png");
   background-position: right bottom;
   background-size: 50%;
