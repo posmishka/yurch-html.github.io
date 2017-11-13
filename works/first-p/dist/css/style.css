@@ -1465,11 +1465,9 @@ body {
 .about-section__img {
   width: 100%;
   max-width: 488px;
-  padding-right: 19.4vw;
-  overflow: hidden; }
+  margin-bottom: 30px; }
   @media screen and (max-width: 777px) {
     .about-section__img {
-      margin-bottom: 50px;
       max-width: 100%; } }
 
 .about-section__top {
@@ -1492,8 +1490,12 @@ body {
 .img-comand {
   position: relative;
   padding-bottom: 100%;
-  background-color: #c4c4c4;
-  border-radius: 50%; }
+  border-radius: 50%;
+  border-radius: 50% 0 0 50%;
+  background-image: url("../img/bg/comand.png");
+  background-position: left  bottom;
+  background-repeat: no-repeat;
+  background-size: 104%; }
   .img-comand:before {
     content: '';
     position: absolute;
@@ -1505,22 +1507,20 @@ body {
     border-radius: 50%;
     background-image: radial-gradient(#dbdbdb 20%, transparent 2px);
     background-size: 10px 10px;
-    -webkit-transform: translate(8rem, 2rem);
-        -ms-transform: translate(8rem, 2rem);
-            transform: translate(8rem, 2rem); }
+    -webkit-transform: translate(3rem, 0);
+        -ms-transform: translate(3rem, 0);
+            transform: translate(3rem, 0); }
   .img-comand:after {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
-    top: 0;
-    width: 130%;
-    height: 105%;
-    border-radius: 50% 0 0 50%;
-    background-image: url("../img/bg/comand.png");
-    background-position: left  bottom;
-    background-repeat: no-repeat;
-    background-size: 104%; }
+    bottom: 18px;
+    z-index: -1;
+    width: 90%;
+    height: 90%;
+    background-color: #c4c4c4;
+    border-radius: 50%; }
 
 .subtitle.subtitle--dk {
   color: #898989; }
@@ -1530,6 +1530,9 @@ body {
   color: #4b4b4b;
   font-weight: 700;
   font-size: 1.875em; }
+  @media screen and (max-width: 777px) {
+    .about-section__title {
+      margin-bottom: .5em; } }
 
 .about-section__desc-text {
   position: relative;
@@ -1724,7 +1727,7 @@ li.slick-active > button:after {
       width: 100%;
       padding: 0; }
       .sect-step.sect-step--4 .sect-step__img .step-img {
-        padding: 0; } }
+        padding-right: 0; } }
 
 .sect-step.sect-step--4 .step-img__ban {
   padding-bottom: 80%; }
@@ -1817,7 +1820,8 @@ li.slick-active > button:after {
   background-position: center; }
   @media screen and (max-width: 1030px) {
     .attention-sect {
-      background: none; } }
+      background: none;
+      padding-bottom: 3rem; } }
 
 .attention-item {
   font-size: 10px; }
