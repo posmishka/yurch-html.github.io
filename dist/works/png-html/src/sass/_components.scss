@@ -1,0 +1,231 @@
+//.social-list
+.social-list {
+  display: flex;
+  font-size: 1rem;
+  
+  @media screen  and (max-width: $second-media) {
+    position: absolute;
+    right: 33px;
+    top: 50%;
+    z-index: 1;
+    padding: .2em;
+    background-color: $black;
+    border: 1px solid $white;
+    border-radius: .2em;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1em;
+    transform: translateY(-50%);
+    transition: visibility $anim, opacity $anim;
+    
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 1.7em;
+  
+  @media screen and (max-width: $first-media) { 
+    margin-right: .4em;
+  }
+}
+
+.social-item {
+  display: block;
+  width: 2em;
+  height: 2em;
+  padding: .25em;
+  border: 1px solid transparent;
+  transition: opacity $anim, border $anim;
+
+  &:active {
+    opacity: .7;
+  }
+
+  @media screen and (min-width: $first-media) {
+    &:hover,
+    &:focus {
+      border: 1px solid;
+    }
+  }
+}
+
+.bott-panel__open-social {
+  display: block;
+  width: 2em;
+  height: 2em;
+  padding: .3em;
+  border: 1px solid;
+  border-radius: .2em;
+  margin-left: auto;
+
+  @media screen  and (min-width: $second-media) {
+    display: none;
+  }
+}
+
+//.input-item
+.input-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.input-item__text {
+  display: block;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  font-size: .9em;
+}
+
+.input-item__input {
+  display: block;
+  width: 100%;
+  height: 2.1em;
+  padding: .5em;
+  margin-top: auto;
+  background-color: $white;
+  color: $grey;
+}
+
+.btn {
+  display: block;
+  text-transform: uppercase;
+  line-height: 2.5em;
+  padding: 0 2.22em;
+  font-size: 1rem;
+  transition: opacity $anim, background-color $anim;
+  
+  &:active {
+    opacity: .7;
+  }
+  
+  &.btn--red-submit {
+    background-color: #f25745;
+    
+    @media screen and (min-width: $first-media) {
+      &:hover,
+      &:focus {
+        background-color: darken(#f25745, 10%);
+      }
+    }
+  }
+}
+
+//.check-btn
+.check-btn {
+  position: relative;
+  font-size: 1rem;
+}
+
+.check-btn__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  
+  &:checked ~ .check-btn__text {
+    background-color: $black;
+  }
+  
+  @media screen and (min-width: $first-media) { 
+    &:focus:not(:checked) ~ .check-btn__text{
+      background-color: darken(#506f78, 10%);
+    }
+  }
+}
+
+.check-btn__text {
+  display: block;
+  text-transform: uppercase;
+  line-height: 2.7em;
+  padding: 0 1.7em;
+  background-color: #506f78;
+  white-space: nowrap;
+  transition: background-color $anim, opacity $anim;
+  cursor: pointer;
+  
+  &::selection {
+    background-color: transparent;
+  }
+  
+  &:active {
+    opacity: .7;
+  }
+  
+  @media screen and (min-width: $first-media) { 
+    &:hover {
+      background-color: darken(#506f78, 10%);
+    }
+  }
+}
+
+//.close 
+.close {
+  position: relative;
+  display: block;
+  width: 1.8em;
+  height: 1.8em;
+  font-size: 1rem;
+  opacity: .7;
+  
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 2px;
+    width: 100%;
+    background-color: currentColor;
+    transition: opacity $anim;
+  }
+  
+  &:before {
+    transform: rotate(45deg);
+  }
+  
+  &:after {
+    transform: rotate(-45deg);
+  }
+  
+  &:active {
+    opacity: .7;
+  }
+  
+  @media screen and (min-width: $first-media) { 
+    &:hover:not(:active) {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,490 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Организация отступов в верстке</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:14.2pt;
+	margin-bottom:10.0pt;
+	margin-left:14.2pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:Arial;}
+h1
+	{margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Cambria;
+	color:black;}
+h2
+	{margin-top:30.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	page-break-after:avoid;
+	border:none;
+	padding:0cm;
+	font-size:13.0pt;
+	font-family:Arial;
+	color:#4F81BD;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:black;}
+h4
+	{margin-top:10.0pt;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Arial;
+	color:#333333;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:#333333;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{margin-top:0cm;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:Tahoma;}
+span.1
+	{font-family:Cambria;
+	color:black;
+	font-weight:bold;}
+span.2
+	{font-family:Arial;
+	color:#4F81BD;
+	font-weight:bold;}
+span.3
+	{font-family:Arial;
+	color:black;
+	font-weight:bold;}
+span.4
+	{font-family:Arial;
+	color:#333333;
+	font-weight:bold;}
+p.ListParagraph, li.ListParagraph, div.ListParagraph
+	{margin-top:0cm;
+	margin-right:14.2pt;
+	margin-bottom:10.0pt;
+	margin-left:14.2pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:Arial;}
+span.a
+	{font-family:Arial;
+	color:#333333;}
+span.a0
+	{font-family:Tahoma;}
+p.NoSpacing, li.NoSpacing, div.NoSpacing
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Arial;}
+p.a1, li.a1, div.a1
+	{margin-top:0cm;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:Arial;}
+p.a2, li.a2, div.a2
+	{margin-top:0cm;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:Arial;
+	color:#999999;}
+p.a3, li.a3, div.a3
+	{margin-top:0cm;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Arial;}
+p.AdditionalInfoHeader, li.AdditionalInfoHeader, div.AdditionalInfoHeader
+	{margin-top:12.0pt;
+	margin-right:14.2pt;
+	margin-bottom:3.0pt;
+	margin-left:14.2pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:#333333;
+	font-weight:bold;}
+p.TrainingHeader, li.TrainingHeader, div.TrainingHeader
+	{margin-top:12.0pt;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:#333333;
+	font-weight:bold;}
+p.TrainingEndYear, li.TrainingEndYear, div.TrainingEndYear
+	{margin-top:0cm;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:Arial;
+	color:#999999;}
+span.LangHeader
+	{font-family:Arial;
+	color:#333333;
+	font-weight:bold;}
+p.Lang, li.Lang, div.Lang
+	{margin-top:6.0pt;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:Arial;}
+span.a4
+	{font-family:Arial;}
+p.ExHeader, li.ExHeader, div.ExHeader
+	{margin-top:12.0pt;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.EduHeader, li.EduHeader, div.EduHeader
+	{margin-top:12.0pt;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:Arial;}
+p.RecHeader, li.RecHeader, div.RecHeader
+	{margin-top:6.0pt;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+span.Salary
+	{color:#999999;}
+span.Grafic
+	{font-weight:bold;}
+span.UpdateDate
+	{color:#999999;
+	font-weight:bold;}
+p.bottomLink, li.bottomLink, div.bottomLink
+	{margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:Arial;
+	color:#999999;}
+p.topLink, li.topLink, div.topLink
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:24.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:Arial;
+	color:#999999;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=UK link=blue vlink=purple>
+
+<div class=Section1 style="max-width: 1000px; margin: 0 auto; padding: 40px 0;">
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:20.0pt;line-height:115%'>Организация</span></b><b><span
+style='font-size:18.0pt;line-height:115%'> отступов</span></b><b><span
+style='font-size:18.0pt;line-height:115%'> </span></b><b><span
+style='font-size:18.0pt;line-height:115%'>в верстке</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'><br>
+Одним из основных принципом верстки является гибкость. А именно возможность
+легко вносить какие-либо изменения и ничего при этом не сломать. <br>
+Умение правильно обращаться с </span><span lang=EN-US style='font-size:14.0pt;
+line-height:115%'>margin</span><span lang=EN-US style='font-size:14.0pt;
+line-height:115%'> </span><span style='font-size:14.0pt;line-height:115%'>и </span><span
+lang=EN-US style='font-size:14.0pt;line-height:115%'>padding</span><span
+lang=EN-US style='font-size:14.0pt;line-height:115%'> </span><span
+style='font-size:14.0pt;line-height:115%'>играет очень большую роль в этом
+деле.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Основные
+принципы:<br>
+<b>1. Отступы идут от предыдушего елемента к следуюшему.</b></span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>2. Отступ
+задается последнему возможному елементу в доме.</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>3. Отступы
+нельзя задавать для независимых елементов ( бэм блок ).</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>4. У
+последнего елемента группы, отступ обнуляется(всегда).</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:16.0pt;line-height:115%'>Отступы идут от предыдушего елемента
+к следуюшему</span></b></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;line-height:115%'>margin</span><span
+style='font-size:14.0pt;line-height:115%'>(ы) задаются от предыдущего елемента
+к следующему, от первого ко второму, сверху вниз,  слева направо. </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'><img
+width=279 height=274 src="отступы%20-%20копия.files/image001.jpg"><img
+width=263 height=197 src="отступы%20-%20копия.files/image002.jpg"></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Это
+значит.что такие свойства как </span><span lang=EN-US style='font-size:14.0pt;
+line-height:115%;color:red'>margin</span><span lang=RU style='font-size:14.0pt;
+line-height:115%;color:red'>-</span><span lang=EN-US style='font-size:14.0pt;
+line-height:115%;color:red'>left</span><span lang=EN-US style='font-size:14.0pt;
+line-height:115%;color:red'> </span><span style='font-size:14.0pt;line-height:
+115%;color:red'>и</span><span style='font-size:14.0pt;line-height:115%'> </span><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;color:red'>margin</span><span
+lang=RU style='font-size:14.0pt;line-height:115%;color:red'>-</span><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;color:red'>top</span><span
+lang=EN-US style='font-size:14.0pt;line-height:115%;color:red'> </span><span
+style='font-size:14.0pt;line-height:115%;color:red'>не используются</span><span
+style='font-size:14.0pt;line-height:115%'> ( бывают исключения</span><span
+style='font-size:14.0pt;line-height:115%'> </span><span style='font-size:14.0pt;
+line-height:115%'>)</span><span lang=RU style='font-size:14.0pt;line-height:
+115%'>. </span><span style='font-size:14.0pt;line-height:115%'>Если нужен
+отступ сверху, то используется </span><span lang=EN-US style='font-size:14.0pt;
+line-height:115%'>padding</span><span lang=RU style='font-size:14.0pt;
+line-height:115%'>-</span><span lang=EN-US style='font-size:14.0pt;line-height:
+115%'>top</span><span lang=EN-US style='font-size:14.0pt;line-height:115%'> </span><span
+style='font-size:14.0pt;line-height:115%'>для родителя. По тому же принципу </span><span
+lang=EN-US style='font-size:14.0pt;line-height:115%'> padding-left </span><span
+style='font-size:14.0pt;line-height:115%'>для родителя.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'><img
+width=577 height=240 src="отступы%20-%20копия.files/image003.jpg"></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'><img
+width=584 height=200 src="отступы%20-%20копия.files/image004.jpg"></span></p>
+
+<p class=MsoNormal><i><span style='font-size:14.0pt;line-height:115%'>Зачем это
+нужно</span></i><span style='font-size:14.0pt;line-height:115%'>:<br>
+Важно соблюдать осмысленную структуру во всем, можно назвать это семантикой<b><i>.
+Отступы идут в направлении потока дом дерева</i></b>, блок сам себя не толкает.
+</span></p>
+
+<p class=MsoNormal><b><span style='font-size:16.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:14.0pt;line-height:115%'>Отступ </span></b><b><span
+style='font-size:16.0pt;line-height:115%'>задается</span></b><b><span
+style='font-size:14.0pt;line-height:115%'> последнему возможному елементу в
+доме</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Это значит.
+что отступы задаюся соседним елементам дома. Для простого примера можно взять
+меню( список ссылок ). </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;line-height:115%'>ul</span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>&gt;</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>li</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>*4&gt;</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>a</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Чтоб сделать
+расстояние между ссылками задается отступ не для ссылки, а для лишки, лишка
+будет последним, и отступ будет между соседними елементами. Пример с меню
+довольно простой и банальный. Но если представить вложенность до 10 блоков, то
+можно намусорить маргинами и падингами.</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;line-height:115%'><img
+width=398 height=91 src="отступы%20-%20копия.files/image005.jpg"></span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;line-height:115%'><br>
+</span><span style='font-size:14.0pt;line-height:115%'>Если взять </span><span
+lang=EN-US style='font-size:14.0pt;line-height:115%'>body</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>&gt;</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>h</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>1</span><span style='font-size:14.0pt;
+line-height:115%'>, и нужно сделать отступ для заголовка сверху. то последний
+елементом будет </span><span lang=EN-US style='font-size:14.0pt;line-height:
+115%'>body</span><span lang=EN-US style='font-size:14.0pt;line-height:115%'> </span><span
+style='font-size:14.0pt;line-height:115%'>и для него задается</span><span
+style='font-size:14.0pt;line-height:115%'> </span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>padding</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>-</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>top</span><span style='font-size:
+14.0pt;line-height:115%'>, </span><span lang=EN-US style='font-size:14.0pt;
+line-height:115%'>margin</span><span lang=RU style='font-size:14.0pt;
+line-height:115%'>(</span><span style='font-size:14.0pt;line-height:115%'>ы</span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>)</span><span
+style='font-size:14.0pt;line-height:115%'>  которые стоят по дефолту всегда
+нужно обнулять.</span></p>
+
+<p class=MsoNormal><span style='font-size:1.0pt;line-height:115%;color:black;
+background:black;layout-grid-mode:line'> </span><span style='font-size:14.0pt;
+line-height:115%'><img width=436 height=151
+src="отступы%20-%20копия.files/image006.jpg"></span></p>
+
+<p class=MsoNormal><i><span style='font-size:14.0pt;line-height:115%'>Зачем это
+нужно:<br>
+</span></i><span style='font-size:14.0pt;line-height:115%'>Самая простая
+причина, по которой стоит придерживаться данного принципа, это чтоб было проще
+найти отступ в будущем, либо вам, либо тому, кто будет в дальнейшем работать с
+вашей версткой. Это если говорить про удобство.<br>
+<br>
+Настоящие проблемы могут возникнуть, когда вывод блоков с плохой структурой
+отступов выводится динамически или дублируется.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:16.0pt;line-height:115%'>Отступы нельзя задавать для
+независимых елементов ( бэм блок )</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Никогда не
+делайте отступы елементов, которые могут использоваться больше чем один раз.
+Для этого есть обертки. Обертки это хорошо. Либо дополнительные классы.<br>
+<b>Если нужно сделать блоку отступ</b>.  Без ущерба это делается с помощью
+наследования.<br>
+</span><span lang=RU style='font-size:14.0pt;line-height:115%'>.</span><span
+lang=EN-US style='font-size:14.0pt;line-height:115%'>block</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>__</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>item</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'> &gt; .</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>block</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'> { </span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>margin</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>-</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>right</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>: 10</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>px</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>; }</span></p>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt;line-height:115%'>.user-description__avatar
+&gt; .</span><span lang=EN-US style='font-size:14.0pt;line-height:115%'>avatar</span><span
+lang=RU style='font-size:14.0pt;line-height:115%'> { </span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>margin</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>-</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>right</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>: 10</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>px</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'> }<br>
+</span><span style='font-size:14.0pt;line-height:115%'>Таким же образом
+задается позиционирование, через наследование. <br>
+<br>
+1. Наследование.<br>
+2. Добавление класса.<br>
+3. Обертка.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:16.0pt;line-height:115%'>У последнего елемента группы, отступ
+обнуляется</span></b></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Возьмем для
+примера список. Чаще чем другие псевдоклассы, вы должны использовать </span><span
+lang=RU style='font-size:14.0pt;line-height:115%'>:</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>last</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>-</span><span lang=EN-US
+style='font-size:14.0pt;line-height:115%'>child</span><span lang=RU
+style='font-size:14.0pt;line-height:115%'>. </span><span style='font-size:14.0pt;
+line-height:115%'>Последний отступ никогда не нужен оставаться. Если есть
+расстояние между последней лишкой и новым блоком, то этот отступ делается не за
+счет лишки. А список отступает.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'><img
+width=564 height=87 src="отступы%20-%20копия.files/image007.jpg"></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%'>Так
+правильно:<br>
+<img width=558 height=109 src="отступы%20-%20копия.files/image008.jpg"><br>
+Исключением обычно служит список товаров, где в ряду может быть от 2 ячеек и
+обнулять отрицательным маргином последние оступы не всегда целесообразно, но
+желательно.</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+14.0pt;line-height:115%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+//= ../include/header.html
+  
+  <main class="rout-content">
+    <div class="map-wp">
+      <div class="map"  style="background-image: url('http://cactus-camp.com.ua/images/map.png'); background-size: cover;"></div>
+      
+      <aside class="chat-wp  active">
+        <div class="chat">
+          <div class="chat__top-panel">
+            <div class="chat-top-panel">
+              <div class="chat-top-panel__hide">
+                <button class="hide-btn" type="button">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#chat"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="chat-top-panel__avatar">
+                <div class="user-sect">
+                  <div class="user-sect__avatar">
+                    <img class="user-sect__avatar-pic" src="http://digitalspyuk.cdnds.net/16/03/768x432/gallery-1453464632-movies-avatar-still-01.jpg" alt="avatar">
+                  </div>
+
+                  <div class="user-sect__info">
+                    <div class="user-sect__name">Mary Smith</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chat-top-panel__data">
+                <div class="top-panel-data">
+                  <div class="time-price  top-panel-data__time">
+                    <div class="time-price__item">
+                      <i class="time-price__ico">
+                        <svg>
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#clock"></use>
+                        </svg>
+                      </i>
+
+                      <div class="time-price__text">
+                        12:05
+                      </div>
+                    </div>
+
+                    <div class="time-price__item">
+                      <div class="time-price__text">
+                        $ 14.00
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chat-control  top-panel-data__control">
+                    <div class="chat-control__item">
+                      <button class="call-btn" type="button">
+                        <svg>
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#phone"></use>
+                        </svg>
+                      </button>
+                    </div>
+
+                    <div class="chat-control__item">
+                      <button class="small-btn" type="button">
+                        Finish
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pause-alert">
+              <div class="pause-alert__text">
+                Pause time from 12 AM to 3 PM
+              </div>
+
+              <div class="pause-alert__time">
+                <i class="pause-alert__ico">
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#clock"></use>
+                  </svg>
+                </i>
+
+                <div class="pause-alert__time-text">
+                  13:01
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="chat__messages  load">
+<!--          load-->
+           <div class="loader">
+             <i class="loader__ico"></i>
+           </div>
+           
+            <ul class="messages" hidden>
+              <li class="messages__item  right">
+                <div class="message-item">
+                  <div class="message-item__desc">
+                    <time class="message-item__date" datatime="2012-12-23T08:23:11+07:00">12:53</time>
+
+                    <div class="message-item__text">
+                      Near interesting monument. Can you 
+                      tell me something about it? 
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="messages__item  right">
+                <div class="message-item">
+                  <div class="message-item__desc">
+                    <div class="message-item__text">
+                      Near interesting monument. Can you 
+                      tell me something about it? 
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="messages__item  left">
+                <div class="message-item">
+                  <div class="message-item__img">
+                    <img class="message-avatar" src="http://digitalspyuk.cdnds.net/16/03/768x432/gallery-1453464632-movies-avatar-still-01.jpg" alt="message-avatar">
+                  </div>
+
+                  <div class="message-item__desc">
+                    <time class="message-item__date" datatime="2012-12-23T08:23:11+07:00">12:53</time>
+
+                    <div class="message-item__text">
+                      Near interesting monument. Can you 
+                      tell me something about it? 
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="messages__item  left">
+                <div class="message-item">
+                  <div class="message-item__img"></div>
+
+                  <div class="message-item__desc">
+                    <div class="message-item__text">
+                      Near interesting monument. Can you 
+                      tell me something about it? 
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="messages__item  right">
+                <div class="message-item">
+                  <div class="rout-message">
+                    <div class="rout-message__text">
+                      Paris: An afternoon in MaraisParis: An afternoon in Ma
+                    </div>
+
+                    <div class="rout-message__img" style="background-image: url('http://digitalspyuk.cdnds.net/16/03/768x432/gallery-1453464632-movies-avatar-still-01.jpg');"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="chat__bottom-panel">
+            <div class="input-panel">
+              <div class="input-panel__top">
+                <textarea class="input-panel__input" cols="30" rows="10" placeholder="Type something…"></textarea>
+
+                <div class="input-panel__btn-click">
+                  <button class="go-message  active">
+<!--                   class active-->
+                    <svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#send-message"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="input-panel__btn">
+                <div class="input-panel__btn-item">
+                 <div class="routes-list">
+                   <div class="routes-list__btn">
+                     <button class="btn-message" type="button">
+                       <svg>
+                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tour-guide"></use>
+                       </svg>
+                     </button>
+                   </div>
+                   
+                   <div class="routes-list__hover">
+<!--                     active-->
+                      <div class="routes-items">
+                        <div class="routes-items__btn">
+                          <button class="add-leng" type="button">
+                            <i class="add-leng__ico"></i>
+
+                            <span class="add-leng__text">
+                              Create Route
+                            </span>
+                          </button>
+                        </div>
+                        
+                        <div class="routes-items__desc">
+                          <ul class="routes-items-list">
+                            <li class="routes-items-list__item">
+                              <button class="routes-item" type="button">
+                                <span class="routes-item__img">
+                                  <img class="routes-item__pic" src="http://digitalspyuk.cdnds.net/16/03/768x432/gallery-1453464632-movies-avatar-still-01.jpg" alt="rout">
+                                </span>
+                                
+                                <span class="routes-item__desc">
+                                  <span class="routes-item__desc-main">
+                                    Paris: An afternoon 
+                                    in Marais
+                                  </span>
+                                  
+                                  <span class="routes-item__desc-sub">
+                                    Paris, France
+                                  </span>
+                                </span>
+                              </button>
+                            </li>
+                            
+                            <li class="routes-items-list__item">
+                              <button class="routes-item" type="button">
+                                <span class="routes-item__img">
+                                  <img class="routes-item__pic" src="http://digitalspyuk.cdnds.net/16/03/768x432/gallery-1453464632-movies-avatar-still-01.jpg" alt="rout">
+                                </span>
+
+                                <span class="routes-item__desc">
+                                  <span class="routes-item__desc-main">
+                                    Paris: An afternoon 
+                                    in Marais
+                                  </span>
+
+                                  <span class="routes-item__desc-sub">
+                                    Paris, France
+                                  </span>
+                                </span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                   </div>
+                 </div>
+                </div>
+
+                <div class="input-panel__btn-item">
+                  <button class="btn-message" type="button">
+                    <svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#picture"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    
+    <aside class="call-wp  active  incoming-call  conversation">
+      <!--      .active  .incoming-call  .conversation  .horizontal  .video-->
+      <div class="call">
+        <div class="call__wp">
+          <div class="call__hide">
+            <button class="hide-btn  horizontal" type="button">
+              <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#phone"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="call__desc">
+            <div class="call__desc-wp">
+              <div class="call__avatar">
+                <div class="marker-user">
+                  <i class="marker-user__ico">
+                    <svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#big-marker"></use>
+                    </svg>
+                  </i>
+
+                  <img class="marker-user__img" src="http://digitalspyuk.cdnds.net/16/03/768x432/gallery-1453464632-movies-avatar-still-01.jpg" alt="avatar">
+                </div>
+              </div>
+
+              <div class="call__text">
+                <span class="call__text-main">
+                  Anny Braun
+                </span>
+
+                <span class="call__text-sub">
+                  Connecting
+                </span>
+              </div>
+            </div>
+            
+            <div class="call-controll">
+              <div class="call-controll__counter">
+                <div class="call-counter">
+                  <i class="call-counter__ico">
+                    <svg>
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#clock"></use>
+                    </svg>
+                  </i>
+                  
+                  <div class="call-counter__time">
+                    00:44
+                  </div>
+                </div>
+              </div>
+             
+              <div class="call-controll__btn-group">
+                <div class="call-controll__item  call-controll__item--mute">
+                  <button class="radius-btn  call-btn--fff  active">
+  <!--                 active-->
+                    <i class="radius-btn__ico">
+                       <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mute"></use>
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+
+                <div class="call-controll__item">
+                  <button class="radius-btn  call-btn--red">
+                    <i class="radius-btn__ico">
+                      <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#phone"></use>
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+
+                <div class="call-controll__item  call-controll__item--call">
+                  <button class="radius-btn  call-btn--green">
+                    <i class="radius-btn__ico">
+                      <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#phone"></use>
+                      </svg>
+                    </i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="call__video" style="background-image: url('https://pbs.twimg.com/profile_images/2075115171/profile.jpg'); background-size: cover;">
+            
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+  
+//= ../include/footer.html

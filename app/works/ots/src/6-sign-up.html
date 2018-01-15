@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>6 sign up</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<section class="login-section">
+		<div class="login-container">
+			<div class="login-section__top">
+				<div class="go-login">
+					<em class="go-login__text">
+						Already have Traveler account?  
+					</em>
+					
+					<a class="login-btn  login-btn--fff" href="#">
+						Sign up
+					</a>
+				</div>
+			</div>
+			
+			<div class="login-section__form">
+				<div class="form-sect">
+					<div class="form-sect__logo">
+						<div class="logo">
+							<img class="logo__pic" src="http://www.iconsdb.com/icons/preview/black/facebook-7-xxl.png" alt="logo">
+						</div>
+					</div>
+					
+					<div class="form-sect__title">
+						<h1 class="main-title">
+							Welcome to Right Away Info!
+						</h1>
+					</div>
+					
+					<div class="form-sect__form">
+						<form class="login-form">
+							<div class="login-form__title">
+								<strong class="form-title">
+									Sign up as Guide. Let’s Get Started!
+								</strong>
+							</div>
+							
+							<div class="inputs-list login-form__inputs">
+								<label class="input-item  inputs-list__item">
+									<i class="input-item__ico">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
+										</svg>
+									</i>
+
+									<input class="input-item__input" type="text" required="required" value="" oninput="this.setAttribute('value', this.value);">
+
+									<span class="input-item__placeholder">Name</span>
+
+									<span class="input-item-alert  input-item__error">
+										Use letters, numbers or ‘_’
+									</span>
+
+									<b class="input-item__line"></b>
+								</label>
+							
+								<label class="input-item  inputs-list__item">
+									<i class="input-item__ico">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#email"></use>
+										</svg>
+									</i>
+									
+									<input class="input-item__input" type="email" required="required" value="" oninput="this.setAttribute('value', this.value);">
+									
+									<span class="input-item__placeholder">Email<sup>*</sup></span>
+									
+									<small class="input-item-alert  input-item__hint">
+										We’ll send an email to this address for verification. 
+									</small>
+									
+									<span class="input-item-alert  input-item__error">
+										Invalid email address.
+									</span>
+									
+									<b class="input-item__line"></b>
+								</label>
+								
+								<label class="input-item  inputs-list__item">
+									<i class="input-item__ico">
+										<svg>
+											<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#password"></use>
+										</svg>
+									</i>
+
+									<input class="input-item__input" type="password" required="required" value="" oninput="this.setAttribute('value', this.value);">
+
+									<span class="input-item__placeholder">Password<sup>*</sup></span>
+
+									<span class="input-item-alert  input-item__error">
+										Type 6 characters or more.
+									</span>
+								
+									<b class="input-item__line"></b>
+								</label>
+							</div>
+							
+							<div class="login-form__btn">
+								<input class="login-btn login-btn--blue" type="submit" value="Sing up">
+							</div>
+						</form>
+					</div>
+					
+					<div class="form-sect__small">
+						<small class="form-sect__small-subtext">
+							Don’t have an account? 
+						</small>
+						
+						<a class="form-sect__small-link" href="#">Sign in</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div hidden>
+		<svg version="1.1">
+			<symbol id="email" viewBox="0 0 24 24">
+				<path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+			</symbol>
+			
+			<symbol id="password" viewBox="0 0 24 24">
+				<path d="M22,18V22H18V19H15V16H12L9.74,13.74C9.19,13.91 8.61,14 8,14A6,6 0 0,1 2,8A6,6 0 0,1 8,2A6,6 0 0,1 14,8C14,8.61 13.91,9.19 13.74,9.74L22,18M7,5A2,2 0 0,0 5,7A2,2 0 0,0 7,9A2,2 0 0,0 9,7A2,2 0 0,0 7,5Z" />
+			</symbol>
+			
+			<symbol id="user" viewBox="0 0 24 24">
+				<path  d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+			</symbol>
+		</svg>
+	</div>
+	
+</body>
+</html>

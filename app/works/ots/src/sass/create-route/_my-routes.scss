@@ -1,0 +1,174 @@
+.rout-content {
+  min-height: 100vh;
+  padding-top: $height-header;
+  background-color: #f9f9f9;
+}
+
+.my-routes {
+  display: flex;
+  padding: 1.500em 2.250em;
+  
+  @media screen and (max-width: $mobile-first) {
+    display: block;
+  }
+}
+
+.my-routes__desc {
+  flex: 1;
+  width: 50%;
+  
+  @media screen and (max-width: $mobile-first) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.my-routes__desc-title {
+  margin-bottom: 1em;
+}
+
+.title-rout {
+  color: $darkgrey;
+  font-size: 2em;
+}
+
+.my-routes__desc-title-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 1em;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  & > .title-rout {
+    margin-right: .5em;
+  }
+}
+
+.title-rout-sub {
+  font-size: 1.125em;
+  color: $darkgrey;
+}
+
+.my-routes__desc-text {
+  margin-bottom: 1em;
+  font-size: 1.125em;
+  color: $darkgrey;
+  line-height: 1.56;
+}
+
+//.route-item 
+.my-routes-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -10px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.my-routes-list__item {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.route-item {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #ffffff;
+  transition: border-color $transition;
+  
+  &:hover {
+    border-color: rgba($primary-color, .3);
+    
+    .route-item__hover {
+      opacity: 1;
+    }
+  }
+}
+
+.route-item__hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba($primary-color, .1);
+  opacity: 0;
+  transition: opacity $transition;
+}
+
+.my-routes__img {
+  width: 50%;
+  padding-left: 3.438em;
+  
+  @media screen and (max-width: $mobile-first) {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.my-routes__ban {
+  padding-bottom: 56%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.24);
+  border: solid 1px #d2d6db;
+}
+
+.my-routes-list__item {
+  width: 250px;
+}
+
+.route-item__img {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+.route-item__desc {
+  padding: 1.1em;
+}
+
+.route-item__title {
+  height: 2em;
+  overflow: hidden;
+  margin-bottom: .8em;
+  letter-spacing: -0.4px;
+  color: $darkgrey;
+  font-size: 1.125em;
+}
+
+.route-item__local {
+  margin-bottom: 1em;
+  font-size: 14px;
+  color: $grey;
+}
+
+.route-item__method, .route-item__method-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.route-item__method-ico {
+  display: block;
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+  color: $darkgrey;
+}
+
+.route-item__method {
+  font-size: 14px;
+  color: $grey;
+  letter-spacing: -0.1px;
+}
+
+
+

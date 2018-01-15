@@ -1,0 +1,193 @@
+.login-section {
+	display: flex;
+	min-height: 100vh;
+	font-size: 16px;
+	background-color:  #f9f9f9;
+	color: $darkgrey;
+	font-family: $roboto;
+
+  @media screen and (max-width: $mobile-width) {
+		font-size: 14px;
+	}
+}
+
+.login-section > .login-container{
+	display: flex;
+	flex-direction: column;
+}
+
+.login-section__form {
+	width: 100%;
+	margin: auto;
+	padding: 25px 0px;
+
+  @media screen and (max-width: $mobile-width) {
+		padding: 20px 0px;
+	}
+
+  @media screen and (min-height: 700px) {
+    padding: 40px 0px;
+  }
+}
+
+.login-section__top {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 30px;
+
+  @media screen and (max-width: $mobile-width) {
+		padding-top: 30px;
+	}
+
+  @media screen and (min-height: 700px) {
+    padding-top: 68px;
+  }
+}
+
+.go-login {
+	display: flex;
+	align-items: center;
+	color: $grey;
+}
+
+.go-login__text {
+	margin-right: 22px;
+}
+
+.logo {
+	font-size: 1px;
+	width: 72em;
+	height: 72em;
+}
+
+.logo__pic {
+	display: block;
+	height: 100%;
+	width: 100%;
+  border-radius: 12%;
+	object-fit: contain;
+}
+
+.form-sect__logo {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 28px;
+}
+
+.form-sect__title {
+	margin-bottom: 31px;
+}
+
+.main-title {
+	font-size: 1.750em;
+	text-align: center;
+}
+
+.form-sect__form {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 22px;
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.login-form {
+	width: 100%;
+	max-width: 485px;
+  padding: 2.5em 3.125em 2.3em 2.5em;
+  border-radius: $border-radius;
+	background-color: #fff;
+	box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
+	border: solid 1px #eeeeee;
+	font-size: 16px;
+
+  @media screen and (max-width: $mobile-width) {
+		font-size: 14px;
+		padding: 25px 20px;
+	}
+
+  @media screen and (min-height: 700px) {
+    padding: 2.813em 3.125em 2.500em 2.500em;
+  }
+}
+
+.login-form__title {
+  margin-bottom: 2em;
+
+  @media screen and (min-height: 700px) {
+    margin-bottom: 2.857em;
+  }
+}
+
+.form-title {
+	display: block;
+	text-align: center;
+	font-size: 1.375em;
+	margin-bottom: .9em;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.form-title__sub {
+	display: block;
+	text-align: center;
+	margin-bottom: .9em;
+	font-size: 1.125em;
+	color: $grey;
+}
+
+.login-form__inputs {
+  margin-bottom: 1.750em;
+  padding-left: 2.5em;
+}
+
+.inputs-list__item:not(:last-child) {
+  margin-bottom: 2.3em;
+}
+
+.login-form__desc {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+	padding-left: 2.55em;
+
+  @media screen and (max-width: $mobile-width) {
+		padding: 0;
+	}
+}
+
+.login-form__desc-link {
+	font-size: 14px;
+	color: $grey;
+	transition: color $transition;
+
+	&:hover {
+		color: $darkgrey;
+	}
+}
+
+.login-form__btn {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.form-sect__small {
+	text-align: center;
+}
+
+.form-sect__small-subtext {
+	margin-right: 3px;
+	color: $grey;
+	font-size: 1em;
+}
+
+.form-sect__small-link {
+	color: $primary-color;
+}
+
+.login-form__btn > .login-btn:not(:last-child) {
+	margin-right: 10px;
+}

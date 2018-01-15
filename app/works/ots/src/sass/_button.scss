@@ -1,0 +1,245 @@
+.login-btn {
+	display: inline-block;
+	min-width: 100px;
+  border-radius: $border-radius;
+	padding: .62em	1.1em;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid $primary-color;
+  transition: background-color $transition, box-shadow $transition, color $transition, border-color $transition;
+	
+  &.login-btn--blue {
+		background-color: $primary-color;
+		color: #fff;
+		
+		&:hover, &:focus {
+			box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.41);
+		}
+		
+		&:active {
+			background-color: darken($primary-color, 15%);
+			border-color: darken($primary-color, 15%);
+		}
+	}
+	
+	&.login-btn--fff {
+		background-color: #fff;
+		color: $primary-color;
+		
+		&:hover, &:focus {
+			background-color: $primary-color;
+			box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.41);
+			color: #fff;
+		}
+
+		&:active {
+			background-color: darken($primary-color, 15%);
+			border-color: darken($primary-color, 15%);
+		}
+	}
+  
+  &.login-btn--green {
+    background-color: $green;
+    border-color: $green;
+    color: #fff;
+
+    &:hover, &:focus {
+      box-shadow: 0 2px 6px 0 rgba($green, .41);
+    }
+
+    &:active {
+      background-color: darken($green, 15%);
+      border-color: darken($green, 15%);
+    }
+  }
+  
+  &.login-btn.disabled {
+    background-color: $disabled;
+    border: 1px solid $disabled;
+    color: #fff;
+    cursor: default;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  &.login-btn--offline {
+    background-color: transparent;
+    color: currentColor;
+    border-color: currentColor;
+  }
+  
+  &.login-btn--fff-transparent { 
+    color: #fff;
+    border-color: currentColor;
+    
+    &:hover, &:focus {
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.41);
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+
+    &:active {
+      border-color: darken($primary-color, 15%);
+      background-color: darken($primary-color, 15%);
+    }
+  }
+  
+  &.login-btn--transparent {
+    color: #fff;
+    border-color: transparent;
+    
+    &:hover, &:focus {
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.41);
+      background-color: $primary-color;
+      border-color: $primary-color;
+    }
+
+    &:active {
+      border-color: darken($primary-color, 15%);
+      background-color: darken($primary-color, 15%);
+    }
+  }
+  
+  &.login-btn--big-blue {
+    background-color: $primary-color;
+    color: #fff;
+    font-size: 1.5em;
+
+    &:hover, &:focus {
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.41);
+    }
+
+    &:active {
+      background-color: darken($primary-color, 15%);
+      border-color: darken($primary-color, 15%);
+    }
+  }
+  
+  &.login-btn--services {
+    position: relative;
+    border: none;
+    background-color: currentColor;
+    overflow: hidden;
+    text-transform: capitalize;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      transition: background-color $transition;
+    }
+    
+    &:hover:before,  &:focus:before {
+      background-color: rgba(#000, .1);
+    }
+    
+    &:active:before {
+      background-color: rgba(#000, .3);
+    }
+    
+    & > span {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+    }
+  }
+  
+  
+  @media screen and (max-width: $mobile-width) {
+    font-size: 13px;
+  }
+}
+
+//.call-btn 
+.call-btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  background-color: currentColor;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  color: $green;
+  transition: box-shadow $transition, color $transition;
+  
+  svg {
+    position: relative;
+    z-index: 2;
+    transition: color $transition, transform $transition;
+    color: #fff;
+  }
+  
+  &:focus {
+    box-shadow: 0 0 2px 0px currentColor;
+  }
+  
+  &:hover, &:focus {
+    background-color: #fff;
+    svg {
+      color: currentColor;
+    }
+  }
+  
+  &:active {
+    box-shadow: 0 0 2px 2px currentColor;
+  }
+  
+  &.active {
+    color: $red;
+    
+    svg {
+      transform: rotate(134deg);
+    }
+  }
+}
+
+.small-btn {
+  display: inline-block;
+  min-width: 7em;
+  padding: 0 10px;
+  border-radius: $border-radius;
+  background-color: $red;
+  border: 2px solid;
+  letter-spacing: 0.019em;
+  color: #fff;
+  line-height: 1.875;
+  transition: color $transition, background-color $transition, border-color $transition;
+  
+  &:hover, &:focus {
+    background-color: transparent;
+    border-color: currentColor;
+    color: $red;
+  }
+  
+  &:active {
+    color: darken($red, 10%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

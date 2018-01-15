@@ -1,0 +1,170 @@
+@media( max-width: 1150px){
+	html {
+		font-size: 8px;
+	}
+	.button-animation__link{
+		width: 150px;
+		height: 45px;
+	}
+	.baner-sect__banner{
+		padding: 40px;
+		padding-top: 110px;
+	}
+	.pixel{
+		transform: scale(1);
+	}
+	
+	.header-page__logo{
+		max-width: 130px;
+	}
+	.works-galery__item{
+		width: 50%;
+	}
+	.link-list-gal__link {
+		font-size: 1.6em;
+	}
+}
+
+@media( max-width: 900px){
+	
+	.main-page__banner-sect{
+		display: none;
+	}
+	
+	.main-page__content{
+	width: 100%;
+	}
+	
+	.works-galery__item{
+		width: 33.33%;
+	}
+	
+	.content-sect__top-panel {
+		display: none;
+	}
+	
+	.header-page{
+		width: 100%;
+	}
+	.footer-page{
+	width: 100%;
+	}
+	.top-section{
+		justify-content: center;
+	}
+	.main-page__content{
+		padding-top: 0;
+	}
+	.drop-menu{
+		padding: 20px;
+	}
+	.top-section__desc{
+		width: auto;
+	}
+	.avatar{
+		width: 90px;
+		height: 90px;
+	}
+	.menu-desc__avatar{
+		margin-bottom: 30px;
+	}
+}
+
+
+
+@media( max-width: 800px){
+	.works-galery__item{
+		width: 50%;
+	}
+}
+
+@media( max-width: 800px){
+	.title-sect__text{
+		margin-bottom: 10px;
+		font-size: 3em;
+	}
+	.title-sect__main {
+		font-size: 4em;
+	}
+	.title-sect__sub {
+		font-size: 2.5em;
+	}
+	
+	.galery-shade{
+		padding: 28px 10px;
+	}
+}
+
+
+@media( max-width: 500px){
+  .footer-desc {
+    font-size: 11px;
+  }
+  
+	.works-galery__item{
+		width: 100%;
+	}
+	
+	.title-sect__text{
+		display: none;
+	}
+	.title-sect__main>span{
+		display: none;
+	}
+	
+	.title-main{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.title-main__animate{
+		order: 999;
+	}
+	
+	.title-main>span:last-child{
+		display: none;
+	}
+	
+	.title-sect__sub>span:first-child{
+		display: none;
+	}
+	
+	.title-sect__sub{
+		text-align: center;
+	}
+	.title-sect__main, .title-sect__text{
+		margin-bottom: 20px;
+	}
+	.title-sect{
+		padding: 0;
+		border: none;
+	}
+	
+	.content-sect__desc-item{
+		padding: 30px 15px;
+	}
+	
+	.menu-desc:after, .menu-desc:before{
+		width: 35px;
+		height: 35px;
+	}
+	.top-section{
+		background-image: linear-gradient(rgba(0,0,0,.56), rgba(0,0,0,.56)), url('../img/mobile/mobtop.jpg');
+	}
+	
+	.avatar{
+		background-image: url('../img/mobile/immob.jpg');
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

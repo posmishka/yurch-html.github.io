@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+body{
+	font:500 15px/1.2 'Open Sans';
+}
+img {
+	max-width: 100%;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	max-width: 1200px;
+	padding:0 15px;
+	margin: auto;
+	position: relative;
+	z-index: 2;
+}
+
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-mailico {
+    width: 37px;
+    height: 23px;
+    background-position: -20px -20px;
+}
+
+.sprite-marker {
+    width: 22px;
+    height: 31px;
+    background-position: -97px -20px;
+}
+
+.sprite-phone {
+    width: 16px;
+    height: 16px;
+    background-position: -20px -91px;
+}
+
+.sprite-phone-green {
+    width: 16px;
+    height: 16px;
+    background-position: -76px -91px;
+}
