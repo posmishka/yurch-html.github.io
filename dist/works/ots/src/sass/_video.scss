@@ -1,0 +1,284 @@
+.video-sect {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: currentColor;
+  overflow: hidden;
+}
+
+.video-header__logo {
+  @media screen and (max-width: $mobile-first) {
+    margin-bottom: 10px;
+
+    & > .head-logo-wp{
+    flex-direction: column;
+
+      .head-logo {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.video-header, .video-sect__cont, .vid-footer {
+  z-index: 2;
+}
+
+.head-logo-wp__text.head-logo-wp__text--fff {
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.video-header, .vid-footer {
+  padding: 17px 0;
+  color: #fff;
+
+  & > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: $mobile-first) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-first) {
+  .vid-footer > .container{
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $mobile-first) {
+  .vid-footer__copiryght {
+    margin-bottom: 10px;
+  }
+}
+
+.video-header__nav {
+  display: flex;
+
+  .login-btn:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.video-sect__title {
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+.vid-title-sect {
+  color: #fff;
+  text-align: center;
+}
+
+.video-sect__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.vid-title-sect__main {
+  margin-bottom: 1em;
+  font-size: 2.25em;
+}
+
+.vid-title-sect__sub {
+  font-size: 1.75em;
+}
+
+.video-sect__title {
+  margin-bottom: 1.875em;
+}
+
+.video-sect__play {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.563em;
+  display: none;
+}
+
+.play-video  {
+  position: relative;
+  width: 2.813em;
+  height: 2.813em;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color $transition;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    margin: auto;
+    border: .6em solid transparent;
+    border-left: .9em solid $grey;
+    font-size: 15px;
+    transform: translateX(25%);
+    transition: border-color $transition;
+  }
+
+  &:hover {
+    background-color: $primary-color;
+
+    &:before {
+      border-left-color: #fff;
+    }
+
+    &:active {
+      background-color: darken($primary-color, 15%);
+    }
+  }
+}
+
+/////video
+.video-sect__vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.video-bord {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  &.active {
+    .tv {
+      opacity: 1;
+    }
+  }
+}
+
+.tv {
+  opacity: 0;
+  transition: opacity 2s;
+  transition-delay: .7s;
+}
+
+.video-bord > .tv iframe{
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  transition: background-color $transition;
+}
+
+.main-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: calc(100% - 60px);
+  width: 100%;
+  margin-top: 60px;
+  object-fit: cover;
+}
+
+.video-sect__full-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  background-color: rgba(0,0,0,0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1.5s, opacity 1.5s;
+
+  &.active {
+    z-index: 7;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.video-full-control {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  & > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+
+.close-vid {
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  height: 2.5em;
+  padding: 0 1.2em;
+  border-radius: $border-radius;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color $transition;
+  color: #fff;
+  filter: drop-shadow(1px 1px 4px #000000);
+
+  &:hover, &:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .clear-btn {
+    color: inherit;
+    background-color: transparent;
+  }
+}
+
+.close-vid__text {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+

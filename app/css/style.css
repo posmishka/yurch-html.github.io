@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 *:before,
 *:after,
 * {
@@ -258,7 +259,6 @@ svg {
 
 .ico-list {
   box-sizing: content-box;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -273,11 +273,9 @@ svg {
 
 .ico-list > li {
   position: relative;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -330,15 +328,12 @@ body {
   opacity: 0; }
 
 .preloader {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -357,11 +352,9 @@ body {
   left: 0;
   width: 40%;
   height: 7rem;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -395,15 +388,12 @@ body {
 .logo-holder {
   height: 100%;
   background: var(--brand-color);
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -465,11 +455,9 @@ body {
   width: 7em;
   padding: 2em;
   position: relative;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -545,13 +533,11 @@ body {
   transition: transform .5s ease-in-out, opacity .5s ease-in-out, -webkit-transform .5s ease-in-out;
   opacity: 0;
   min-height: calc( 100vh - 70px);
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
 .menu-desc {
-  -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -576,46 +562,35 @@ body {
 
 .menu-desc {
   padding: 20px;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
 
 .menu-desc__avatar {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px; }
 
 .user {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -675,15 +650,12 @@ body {
   background-size: cover;
   background-position: 50% 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(../img/topsect.jpg);
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -758,15 +730,12 @@ body {
       -ms-transform-origin: 50% 50% .5em;
           transform-origin: 50% 50% .5em;
   text-align: center;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -783,7 +752,6 @@ body {
           transform: rotateX(-90deg); }
 
 .cube-list {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -815,11 +783,9 @@ body {
 .main-page {
   position: relative;
   overflow: hidden;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
@@ -918,11 +884,9 @@ body {
 
 .text-title {
   height: 100%;
-  display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -985,7 +949,6 @@ body {
   margin-bottom: 30px; }
 
 .works-galery {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1042,16 +1005,12 @@ body {
   background: rgba(0, 0, 0, 0.9);
   height: 100%;
   padding: 28px;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -1077,15 +1036,12 @@ body {
     border-right: 2px solid rgba(255, 255, 255, 0.5); }
 
 .galery-item__counter {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1143,11 +1099,9 @@ body {
 .galery-shade__small {
   font-size: 1.2em;
   color: rgba(255, 255, 255, 0.5);
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
@@ -1160,11 +1114,9 @@ body {
 
 .baner-sect__banner {
   padding: 60px;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -1177,29 +1129,23 @@ body {
   position: relative;
   z-index: 2;
   width: 100%;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
 
 .banner-item__pixel {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -1213,11 +1159,9 @@ body {
   background: #191919;
   height: 100px;
   padding: 30px;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -1235,11 +1179,9 @@ body {
     border-top: 2px solid var(--brand-color); }
 
 .footer-desc {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1359,11 +1301,9 @@ body {
   margin-right: 10px; }
 
 .contact-item {
-  display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -1396,17 +1336,14 @@ body {
     margin: 0; }
 
 .social-item {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 1em;
   height: 1em;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1424,7 +1361,6 @@ body {
   display: block; }
 
 .social-list {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
@@ -1500,15 +1436,12 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -4042,10 +3975,6 @@ body {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); } }
 
-.cube-letter {
-  -webkit-animation: html 4s cubic-bezier(0.42, 0, 1, 1) infinite;
-          animation: html 4s cubic-bezier(0.42, 0, 1, 1) infinite; }
-
 @-webkit-keyframes html {
   0% {
     -webkit-transform: rotateX(0deg);
@@ -4102,7 +4031,6 @@ body {
   .footer-page {
     width: 100%; }
   .top-section {
-    -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
@@ -4143,21 +4071,16 @@ body {
   .title-sect__main > span {
     display: none; }
   .title-main {
-    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
   .title-main__animate {
-    -webkit-box-ordinal-group: 1000;
     -webkit-order: 999;
         -ms-flex-order: 999;
             order: 999; }
@@ -4181,3 +4104,62 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../img/mobile/mobtop.jpg"); }
   .avatar {
     background-image: url("../img/mobile/immob.jpg"); } }
+
+.code {
+  min-height: 100vh;
+  padding: 15px 20px 20px 54px;
+  background-color: #262728;
+  font-family: 'Source Code Pro', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  counter-reset: code-counter; }
+
+.list__tab {
+  position: relative;
+  padding-left: 1em;
+  border-left: 1px solid rgba(143, 144, 138, 0.29); }
+
+.code__line {
+  height: 22px;
+  line-height: 22px; }
+
+.code__list {
+  position: relative; }
+
+.code__line:before {
+  content: counter(code-counter);
+  counter-increment: code-counter;
+  position: absolute;
+  right: calc(100% + 15px);
+  color: #8f908a; }
+
+.color-1 {
+  color: #66d9ef; }
+
+.color-2 {
+  color: #e92772; }
+
+.color-3 {
+  color: #8a7bff; }
+
+.color-4 {
+  color: #a6e22d; }
+
+.download-link {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 3;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff; }
+  .download-link:active {
+    opacity: .8; }
+
+.download-link__ico {
+  width: 24px;
+  height: 24px; }

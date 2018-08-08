@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OTS</title>
+
+	<meta name="viewport" content="width=1200, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div class="svg-sprite" hidden>
+	<svg id="svg-sprite">
+
+	</svg>
+</div>
+
+	<div class="ico-lib" hidden>
+	<!-- ЧТОБ ПОСМОТРЕТЬ ИСПОЛЬЗУЕМЫЕ ИКОНКИ В СПРАЙТЕ удалите атрибут hidden-->
+	<style>
+		.ico-lib {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 999;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+      overflow: auto;
+    }
+    
+    .ico-list {
+      box-sizing: content-box;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px;
+      font-family: arial, sans-serif;
+      font-size: 12px;
+      color: #0c6694;
+      counter-reset: count;
+    }
+
+    .ico-list > li {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid;
+      border-radius: 4px;
+      background-color: #ebf3fc;
+    }
+
+    .ico-list > li:before {
+      counter-increment: count;
+      content: counter(count);
+      position: absolute;
+      top: 0;
+      right: 105%;
+    }
+
+    .ico-list svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: currentColor;
+    }
+
+
+    .ico-list .title {
+      position: absolute;
+      bottom: 105%;
+      left: 0;
+      word-break: break-all;
+    }
+	</style>
+
+	<script>
+      function buildIcons() {
+        var symbol = document.querySelectorAll('#svg-sprite > symbol');
+        var ul = document.querySelectorAll('.ico-list')[0];
+
+        for (var i = 0; i < symbol.length; i++) {
+          var nameSymbol = symbol[i].getAttribute('id');
+          var li = document.createElement('li');
+          var svg = document.createElement('svg');
+          var use = document.createElement('use');
+          var shdom = use.createShadowRoot();
+          var title = document.createElement('strong');
+          var viewBox = symbol[i].getAttribute('viewBox');
+
+
+          use.setAttribute('xmlns:xlink','http://www.w3.org/1999/xlink');
+          use.setAttribute('xlink:href', '#' + nameSymbol);
+          shdom.innerHTML = '<svg width="100%" height="100%" viewBox="'+ viewBox + '">' + symbol[i].innerHTML + '</svg>';
+          ul.append(li);
+          li.append(svg);
+          li.append(title);
+          title.classList.add('title');
+          title.append(nameSymbol);
+          svg.append(use);
+        }
+      }
+
+      window.onload = function() {
+        buildIcons();
+      }
+	</script>
+
+	<ol class="ico-list"></ol>
+</div>
+
+<script src="min-js/libs.min.js"></script>
+<script src="min-js/main.min.js"></script>
+</body>
+</html>

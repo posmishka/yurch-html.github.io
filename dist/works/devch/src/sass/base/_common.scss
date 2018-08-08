@@ -1,0 +1,14 @@
+body {
+  font-family: $geometria;
+  font-weight: 500;
+}
+
+.load {
+  animation: load 1.2s linear infinite;
+}
+
+@keyframes load {
+  100% {
+    transform: rotate(1turn);
+  }
+}

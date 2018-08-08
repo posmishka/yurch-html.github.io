@@ -1,0 +1,27 @@
+.header-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  background-color: $white;
+}
+
+.header-page__logo {
+  width: 70%;
+}
+
+.logo {
+  display: block;
+  max-width: 273px;
+  max-height: 90px;
+}
+
+.logo__pic {
+  max-width: 100%;
+}
+
+.header-page__menu {
+  @media screen and (min-width: $screen-lg) {
+    padding-right: 56px;
+  }
+}

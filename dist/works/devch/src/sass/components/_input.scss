@@ -1,0 +1,63 @@
+.input-item {
+  display: block;
+  width: 100%;
+
+  &:hover,
+  &:focus-within {
+    .input-item__title {
+      @include hover;
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    opacity: 0;
+  }
+
+  ::-moz-placeholder {
+    opacity: 0;
+  }
+
+  :-moz-placeholder {
+    opacity: 0;
+  }
+
+  :-ms-input-placeholder {
+    opacity: 0;
+  }
+}
+
+.input-item__title {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: $main-text;
+  transition: transform $anim;
+}
+
+.input-item__input {
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: $radius;
+  background-color: $light-bg;
+
+  &:invalid:not(:placeholder-shown) {
+    box-shadow: 0 0 0 1px $error inset;
+  }
+
+  &:valid {
+    box-shadow: 0 0 0 1px inset $success;
+  }
+}
+
+@supports (display: flex) {
+  .input-item__input {
+    &:invalid:not(:placeholder-shown) {
+      box-shadow: 0 0 0 1px $error inset;
+    }
+
+    &:valid {
+      box-shadow: 0 0 0 1px inset $success;
+    }
+  }
+}

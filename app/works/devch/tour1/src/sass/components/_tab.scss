@@ -1,0 +1,45 @@
+[data-tab-item]:not(.active) {
+  display: none;
+}
+
+.tab-btn {
+  display: flex;
+  height: 40px;
+  color: $brand-text;
+  border: 2px solid;
+  border-radius: $radius;
+  background-color: $white-bg;
+}
+
+.tab-btn__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 115px;
+  color: $brand-text;
+  transition: backgrond-color $anim;
+
+  &.active {
+    background-color: currentColor;
+
+    .tab-btn__text {
+      color: $white-text;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .tab-btn__text {
+      @include hover;
+    }
+  }
+
+  &:active {
+    opacity: .8;
+  }
+}
+
+.tab-btn__text {
+  transition: transform $anim;
+}

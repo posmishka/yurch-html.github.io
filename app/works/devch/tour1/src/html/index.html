@@ -1,0 +1,361 @@
+//= include/head.html
+
+<div class="form-wrap">
+  <div class="form-wrap__close-btn">
+    <button class="close-btn" type="button">
+      <svg class="close-btn__ico">
+        <use xlink:href="#close"></use>
+      </svg>
+    </button>
+  </div>
+
+  <form class="paymebt-form">
+    <div class="paymebt-form__title">
+      <h2 class="sect-title">
+        Заповніть форму
+      </h2>
+    </div>
+
+    <div class="paymebt-form__tab-btn">
+      <div class="tab-btn">
+        <button class="tab-btn__item  active" type="button"  data-tab-btn>
+          <span class="tab-btn__text">Фіз. особа</span>
+        </button>
+
+        <button class="tab-btn__item" type="button">
+          <span class="tab-btn__text">Юр. особа</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="paymebt-form__tab-desc">
+      <div class="paymebt-form__tab-item  active"  data-tab-item>
+        <div class="paymebt-form__inputs">
+          <div class="paymebt-form__inputs-item">
+            <div class="paymebt-form__input  paymebt-form__input--half">
+              <label class="input-item">
+                <span class="input-item__title">Ім’я</span>
+                <input class="input-item__input" type="text" required  placeholder=" ">
+              </label>
+            </div>
+
+            <div class="paymebt-form__input  paymebt-form__input--half">
+              <label class="input-item">
+                <span class="input-item__title">Фамілія</span>
+                <input class="input-item__input" type="text" required  placeholder=" ">
+              </label>
+            </div>
+
+            <div class="paymebt-form__input">
+              <div class="input-item-add-ico">
+                <label class="input-item">
+                  <span class="input-item__title">Назва компаніі, організації</span>
+                  <input class="input-item__input" type="text" required  placeholder=" ">
+                </label>
+
+                <div class="input-item-add-ico__add-ico">
+                  <input type="file">
+                  +  Логотип
+                </div>
+              </div>
+            </div>
+
+            <div class="paymebt-form__input">
+              <label class="input-item">
+                <span class="input-item__title">Email-адрес</span>
+                <input class="input-item__input" type="email" required  placeholder=" ">
+              </label>
+            </div>
+
+            <div class="paymebt-form__input">
+              <label class="input-item">
+                <span class="input-item__title">Номер телефону</span>
+                <input class="input-item__input" type="tel" required  placeholder=" ">
+              </label>
+            </div>
+          </div>
+
+          <div class="paymebt-form__inputs-item">
+            <div class="paymebt-form__input">
+              <label class="input-item">
+                <span class="input-item__title">Країна</span>
+                <input class="input-item__input" type="text" required  placeholder=" ">
+              </label>
+            </div>
+
+            <div class="paymebt-form__input  paymebt-form__input--half">
+              <label class="input-item">
+                <span class="input-item__title">Місто</span>
+                <input class="input-item__input" type="text" required  placeholder=" ">
+              </label>
+            </div>
+
+            <div class="paymebt-form__input  paymebt-form__input--half">
+              <label class="input-item">
+                <span class="input-item__title">Штат, район</span>
+                <input class="input-item__input" type="text" required  placeholder=" ">
+              </label>
+            </div>
+
+            <div class="paymebt-form__input">
+              <label class="input-item">
+                <span class="input-item__title">Адреса</span>
+                <input class="input-item__input" type="text" required  placeholder=" ">
+              </label>
+            </div>
+
+            <div class="paymebt-form__input">
+              <label class="input-item">
+                <span class="input-item__title">Поштовий індекс</span>
+                <input class="input-item__input" type="number" required  placeholder=" ">
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="paymebt-form__radio-sect">
+          <div class="paymebt-form__second-title">
+            <div class="paymebt-form__second-title-main">
+              <h2 class="sect-title">
+                Види допомоги
+              </h2>
+            </div>
+
+            <p class="paymebt-form__second-title-sub">
+              Ви можете змінити вид допомоги
+            </p>
+          </div>
+
+          <div class="radio-sect  paymebt-form__menu">
+            <ul class="radio-sect__menu">
+              <li class="radio-sect__menu-item">
+                <label class="check-menu-item" tabindex="0">
+                  <input class="check-menu-item__input" type="radio" name="radio-1">
+
+                  <span class="check-menu-item__wrap">
+                    <span class="check-menu-item__img">
+                      <svg class="check-menu-item__ico  check-menu-item__ico--hand">
+                        <use xlink:href="#hand"></use>
+                      </svg>
+
+                      <span class="check-menu-item__arrow">
+                        <span class="check-menu-item__arrow-item"></span>
+                      </span>
+                    </span>
+
+                    <span class="check-menu-item__title">
+                      Зробити
+                    </span>
+                  </span>
+                </label>
+              </li>
+
+              <li class="radio-sect__menu-item">
+                <label class="check-menu-item" tabindex="0">
+                  <input class="check-menu-item__input" type="radio" name="radio-1" checked>
+
+                  <span class="check-menu-item__wrap">
+                    <span class="check-menu-item__img">
+                      <svg class="check-menu-item__ico  check-menu-item__ico--purse">
+                        <use xlink:href="#purse"></use>
+                      </svg>
+
+                      <span class="check-menu-item__arrow">
+                        <span class="check-menu-item__arrow-item"></span>
+                      </span>
+                    </span>
+
+                    <span class="check-menu-item__title">
+                      Фінансова допомога
+                    </span>
+                  </span>
+                </label>
+              </li>
+
+              <li class="radio-sect__menu-item">
+                <label class="check-menu-item" tabindex="0">
+                  <input class="check-menu-item__input" type="radio" name="radio-1">
+
+                  <span class="check-menu-item__wrap">
+                    <span class="check-menu-item__img">
+                      <svg class="check-menu-item__ico  check-menu-item__ico--clothes">
+                        <use xlink:href="#clothes"></use>
+                      </svg>
+
+                      <span class="check-menu-item__arrow">
+                        <span class="check-menu-item__arrow-item"></span>
+                      </span>
+                    </span>
+
+                    <span class="check-menu-item__title">
+                      Матеріальна допомога
+                    </span>
+                  </span>
+                </label>
+              </li>
+
+              <li class="radio-sect__menu-item">
+                <label class="check-menu-item" tabindex="0">
+                  <input class="check-menu-item__input" type="radio" name="radio-1">
+
+                  <span class="check-menu-item__wrap">
+                    <span class="check-menu-item__img">
+                      <svg class="check-menu-item__ico  check-menu-item__ico--heart">
+                        <use xlink:href="#heart"></use>
+                      </svg>
+
+                      <span class="check-menu-item__arrow">
+                        <span class="check-menu-item__arrow-item"></span>
+                      </span>
+                    </span>
+
+                    <span class="check-menu-item__title">
+                      Волонтерство
+                    </span>
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="payment-options">
+            <div class="payment-options__menu">
+              <div class="payment-options__title">
+                Спосіб оплати
+              </div>
+
+              <ul class="payment-options__list">
+                <li class="payment-options__item">
+                  <label class="payment-item" tabindex="0">
+                    <input class="payment-item__input" type="radio" name="radio-2">
+
+                    <span class="payment-item__wrap">
+                      <img class="payment-item__img" src="../images/pic/visa-mcd.svg" alt="visa MasterCard">
+
+                      <span class="payment-item__title">
+                        Карта Visa/MasterCard
+                      </span>
+                    </span>
+                  </label>
+                </li>
+
+                <li class="payment-options__item">
+                  <label class="payment-item" tabindex="0">
+                    <input class="payment-item__input" type="radio" name="radio-2" checked>
+
+                    <span class="payment-item__wrap">
+                      <span class="payment-item__name">
+                        Приват24
+                      </span>
+
+                      <span class="payment-item__title">
+                        Приват 24
+                      </span>
+                    </span>
+                  </label>
+                </li>
+
+                <li class="payment-options__item">
+                  <label class="payment-item" tabindex="0">
+                    <input class="payment-item__input" type="radio" name="radio-2">
+
+                    <span class="payment-item__wrap  payment-item__wrap--long-img">
+                      <img class="payment-item__img" src="../images/pic/terminal.svg" alt="Термінали України">
+
+                      <span class="payment-item__title">
+                        Термінали України
+                      </span>
+                    </span>
+                  </label>
+                </li>
+
+                <li class="payment-options__item">
+                  <label class="payment-item" tabindex="0">
+                    <input class="payment-item__input" type="radio" name="radio-2">
+
+                    <span class="payment-item__wrap">
+                      <img class="payment-item__img" src="../images/pic/webmoney.svg" alt="Webmoney">
+
+                      <span class="payment-item__title">
+                        Webmoney
+                      </span>
+                    </span>
+                  </label>
+                </li>
+
+                <li class="payment-options__item">
+                  <label class="payment-item" tabindex="0">
+                    <input class="payment-item__input" type="radio" name="radio-2">
+
+                    <span class="payment-item__wrap">
+                      <img class="payment-item__img" src="../images/pic/paypal.svg" alt="PayPal">
+
+                      <span class="payment-item__title">
+                        PayPal
+                      </span>
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="payment-options__card">
+              <div class="payment-options__title">
+                Введіть наступні данні
+              </div>
+
+              <div class="payment-card">
+                <div class="payment-card__top-panel">
+                  <div class="payment-card__title">Номер карти</div>
+
+                  <div class="payment-card__inputs">
+                    <div class="payment-card__inputs-item">
+                      <input class="payment-card__min-input" type="number">
+                    </div>
+
+                    <div class="payment-card__inputs-item">
+                      <input class="payment-card__min-input" type="number">
+                    </div>
+
+                    <div class="payment-card__inputs-item">
+                      <input class="payment-card__min-input" type="number">
+                    </div>
+
+                    <div class="payment-card__inputs-item">
+                      <input class="payment-card__min-input" type="number">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="payment-card__bottom-panel">
+                  <div class="payment-card__falf-input">
+                    <div class="payment-card__title">Термін дії</div>
+
+                    <input class="payment-card__min-input  payment-card__min-input--width" type="number">
+                  </div>
+
+                  <div class="payment-card__falf-input">
+                    <div class="payment-card__title">CVC/CVV</div>
+
+                    <input class="payment-card__min-input  payment-card__min-input--width" type="number">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="paymebt-form__tab" data-tab-item></div>
+    </div>
+
+    <div class="paymebt-form__btn">
+      <button class="form-btn" type="submit">
+        <span class="form-btn__text">Допомогти</span>
+      </button>
+    </div>
+  </form>
+</div>
+
+//= include/sprite.html
+//= include/foot.html

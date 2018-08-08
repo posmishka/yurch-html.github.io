@@ -1,0 +1,257 @@
+.profile-creation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.get-started { 
+  width: 100%;
+  max-width: 630px;
+  border-radius: $border-radius;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
+  border-top: solid 1px #eeeeee;
+  font-size: 16px;
+  
+  @media screen and (max-width: $mobile-width) {
+    font-size: 14px;
+  }
+}
+
+.get-started__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.875em;
+  padding-bottom: 1.688em;
+  padding-top: 1em;
+}
+
+.logo.logo--min {
+  font-size: .68px;
+}
+
+.title-sect {
+  font-size: 1.2em;
+  color: $darkgrey;
+}
+
+.get-started__logo {
+  margin-right: 0.875em;
+}
+
+.get-started__text {
+  padding: 0 1.875em;
+  margin-bottom: 1.688em;
+  font-size: 1em;
+  line-height: 1.38;
+  color: $grey;
+  text-align: center;
+}
+
+.get-started__bord {
+  display: block;
+  padding-bottom: 46%;
+  background-image: url(../img/picture_get_started.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.get-started__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.188em;
+}
+
+.form-creation {
+  display: flex;
+  flex-direction: column;
+  height: calc( 100vh - 40px );
+  min-height: 500px;
+  max-height: 900px;
+  width: 100%;
+  max-width: 625px;
+  border-radius: $border-radius;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.4);
+  border-top: solid 1px #eeeeee;
+  font-size: 16px;
+}
+
+.creation-top {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #dadada;
+  padding: .8em 4.5em;
+  padding-bottom: 2em;
+  
+  @media screen and (max-width: $mobile-width) {
+    padding: .8em 1.8em;
+  }
+}
+
+.form-creation__footer {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #dadada;
+}
+
+.creation-top__title {
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.form-creation__body {
+  position: relative;
+  flex: 1;
+  display: flex;
+  padding: 1.725em 0;
+  padding-right: 0;
+  font-size: 14px;
+  overflow: hidden;
+  
+  @media screen and (max-width: $mobile-width) {
+    padding: 15px 0;
+  }
+}
+
+.form-creation__body-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.step-first-wrap {
+  padding: 0 3.571em;
+  
+  @media screen and (max-width: $mobile-width) {
+    padding: 0 2em;
+  }
+}
+
+.avatar-sect {
+  display: flex;
+  align-items: center;
+  
+  @media screen and (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.avatar-sect__avatar {
+  margin-right: 2.688em;
+  padding-top: 3px;
+  
+  @media screen and (max-width: $mobile-width) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.avatar-sect__nick {
+  flex: 1;
+  
+  @media screen and (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.form-creation__body-top {
+  margin-bottom: 2.5em;
+}
+
+.info-user-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.429em;
+  margin-left: -1.429em;
+  margin-bottom: -1.8em;
+}
+
+.info-user-inputs__dell {
+  position: absolute;
+  right: 1.35em;
+  top: -16px;
+  
+  & > .clear-btn {
+    color: $primary-color;
+    font-size: .7px;
+    transition: color $transition;
+    
+
+    &:hover, &:focus {
+      color: darken( $primary-color, 20%);
+    }
+  } 
+}
+
+.info-user-inputs__item {
+  width: 100%;
+  margin-bottom: 2em;
+  padding: 0 1.429em;
+}
+
+.info-user-inputs__item.info-user-inputs__item-width {
+  width: 50%;
+  
+  @media screen and (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.form-creation__inputs {
+  margin-bottom: 1.8em;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-creation__leng {
+  margin-bottom: 1.8em;
+}
+
+.form-creation__button-wp {
+  display: flex;
+  & > .login-btn {
+    margin-right: 10px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.form-creation__add-leng {
+  margin-bottom: 2.4em;
+}
+
+.form-creation__text {
+  margin-right: auto;
+  align-self: center;
+  padding-left: 2.3rem;
+  color: $darkgrey;
+  font-size: 14px;
+  
+  @media screen and (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.clear-btn.download-helper__close {
+  position: absolute;
+  font-size: .45px;
+  top: 5px;
+  right: 5px;
+}
+
+
+
+
+
+
+

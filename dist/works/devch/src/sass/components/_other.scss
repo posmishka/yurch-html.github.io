@@ -1,0 +1,145 @@
+.sect-title {
+  font-family: $geometria;
+  font-weight: 800;
+  font-size: 64px;
+  text-align: center;
+  color: $brand-text;
+
+  @media screen and (max-width: $screen-md-max) {
+    font-size: 48px;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    font-size: 36px;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    font-size: 24px;
+  }
+}
+
+.close-btn {
+  width: 44px;
+  height: 44px;
+  padding: 4px;
+  color: $brand-bg;
+  opacity: .7;
+  transition: opacity $anim, transform $anim;
+
+  &:hover,
+  &:focus {
+    @include hover;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.close-btn__ico {
+  width: 100%;
+  height: 100%;
+}
+
+.payment-card {
+  border-radius: $radius-3;
+  background-color: $light-main-bg;
+  padding: 20px 24px;
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 20px;
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 15px 10px;
+    border-radius: $radius-2;
+  }
+}
+
+.payment-card__top-panel {
+  margin-bottom: 28px;
+}
+
+.payment-card__inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-card__min-input {
+  height: 40px;
+  width: 100%;
+  border-radius: $radius;
+  background-color: $sub-ligt-bg;
+  text-align: center;
+}
+
+.payment-card__inputs-item {
+  width: 100%;
+  max-width: 74px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.payment-card__falf-input {
+  width: 100%;
+  max-width: 130px;
+
+  @media screen and (max-width: $screen-xs-max) {
+    max-width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.payment-card__title {
+  margin-bottom: 5px;
+  color: $white-text;
+  font-size: 14px;
+}
+
+.payment-card__bottom-panel {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: $screen-xs-max) {
+    display: block;
+  }
+}
+
+.form-btn {
+  display: block;
+  width: 300px;
+  line-height: 60px;
+  border-radius: $radius-2;
+  background-image: linear-gradient(79deg, #e53656, #6082d8);
+  box-shadow: 0 0 15px 5px rgba(229, 54, 86, .4);
+  color: $white-text;
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+
+  &:hover,
+  &:focus {
+    .form-btn__text {
+      @include hover;
+    }
+  }
+
+  &:active {
+    opacity: .8;
+  }
+}
+
+.form-btn__text {
+  display: block;
+  transition: transform $anim;
+}

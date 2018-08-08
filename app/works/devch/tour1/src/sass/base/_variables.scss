@@ -1,0 +1,42 @@
+//fonts
+$geometria: Geometria, sans-serif;
+$gilroy:    Gilroy, sans-serif;
+
+//general-color
+$dark-blue:   #363b5d;
+$phiolet:     #9c5d9a;
+$light-blue:  #c5d5e6;
+$white:       #fff;
+$grey:        #939aa3;
+$light-grey:  #f3f7fa;
+$blue:        #4a90e2;
+
+//text-color
+$brand-text:  $dark-blue;
+$white-text:  $white;
+$light-text:  $light-blue;
+$main-text:   $grey;
+
+//background
+$brand-bg:          $dark-blue;
+$white-bg:          $white;
+$light-main-bg:     $light-blue;
+$light-bg:          rgba($light-blue, .2);
+$active-bg:         $phiolet;
+$sub-ligt-bg:       #f3f7fa;
+
+//common
+$success: #13f713;
+$error: #ff0c0c;
+
+//media
+$screen-lg-max: 1365px;
+$screen-md-max: 1200px;
+$screen-sm-max: 767px;
+$screen-xs-max: 479px;
+
+//other
+$anim: .2s;
+$radius: 5px;
+$radius-2: 10px;
+$radius-3: 15px;
