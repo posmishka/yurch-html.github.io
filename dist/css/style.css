@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 *:before,
 *:after,
 * {
@@ -4103,3 +4104,62 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url("../img/mobile/mobtop.jpg"); }
   .avatar {
     background-image: url("../img/mobile/immob.jpg"); } }
+
+.code {
+  min-height: 100vh;
+  padding: 15px 20px 20px 54px;
+  background-color: #262728;
+  font-family: 'Source Code Pro', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  counter-reset: code-counter; }
+
+.list__tab {
+  position: relative;
+  padding-left: 1em;
+  border-left: 1px solid rgba(143, 144, 138, 0.29); }
+
+.code__line {
+  height: 22px;
+  line-height: 22px; }
+
+.code__list {
+  position: relative; }
+
+.code__line:before {
+  content: counter(code-counter);
+  counter-increment: code-counter;
+  position: absolute;
+  right: calc(100% + 15px);
+  color: #8f908a; }
+
+.color-1 {
+  color: #66d9ef; }
+
+.color-2 {
+  color: #e92772; }
+
+.color-3 {
+  color: #8a7bff; }
+
+.color-4 {
+  color: #a6e22d; }
+
+.download-link {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 3;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff; }
+  .download-link:active {
+    opacity: .8; }
+
+.download-link__ico {
+  width: 24px;
+  height: 24px; }

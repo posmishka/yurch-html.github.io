@@ -1,0 +1,35 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $main-bg;
+  font-family: $roboto;
+  color: #423f54;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1668px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $screen-md-max) {
+    padding: 0 23px;
+  }
+}
+
+@supports(max-width: env(safe-area-inset-left)) {
+  .container {
+    max-width: calc(100% - env(safe-area-inset-left)*2);
+  }
+}

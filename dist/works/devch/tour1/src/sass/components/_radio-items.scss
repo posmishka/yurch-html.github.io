@@ -1,0 +1,195 @@
+.check-menu-item {
+  display: block;
+  color: $light-main-bg;
+  cursor: pointer;
+  transition: color $anim;
+
+  &:hover,
+  &:focus {
+    .check-menu-item__title {
+      @include hover;
+    }
+  }
+
+  &:active .check-menu-item__title {
+    opacity: .8;
+  }
+}
+
+.check-menu-item__input {
+  display: none;
+
+  &:checked ~ .check-menu-item__wrap {
+    .check-menu-item__img {
+      border-color:  $active-bg;
+      background-color: $active-bg;
+    }
+
+    .check-menu-item__title {
+      color: $brand-text;
+    }
+
+    .check-menu-item__ico {
+      color: $white-text;
+    }
+
+    .check-menu-item__arrow {
+      display: block;
+
+      @media screen and (max-width: $screen-md-max) {
+        display: none;
+      }
+    }
+  }
+}
+
+.check-menu-item__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.check-menu-item__img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border: 2px solid;
+  border-radius: $radius-3;
+  transition: background-color $anim, border-color $anim;
+}
+
+.check-menu-item__arrow {
+  position: absolute;
+  top: calc(100% - 5px);
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+  padding-bottom: 3px;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -17px;
+    right: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    margin: auto;
+    background-color: $white-bg;
+    transform: rotate(45deg);
+  }
+}
+
+.check-menu-item__arrow-item {
+  display: block;
+  width: 33px;
+  height: 30px;
+  overflow: hidden;
+  margin: auto;
+  transform: rotate(90deg);
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: calc(70%);
+    width: 30px;
+    height: 30px;
+    background-color: $white-bg;
+    border: 1px solid $light-main-bg;
+    border-radius: 4px;
+    transform: rotate(45deg) skew(-12deg, -12deg);
+  }
+}
+
+.check-menu-item__ico--hand {
+  width: 32.4px;
+  height: 40px;
+}
+
+.check-menu-item__ico--purse {
+  width: 40px;
+  height: 33px;
+}
+
+.check-menu-item__ico--clothes {
+  width: 40px;
+  height: 60px;
+}
+
+.check-menu-item__ico--heart {
+  width: 38.8px;
+  height: 36.7px;
+}
+
+.check-menu-item__title {
+  font-size: 18px;
+  font-weight: 800;
+  transition: color $anim, transform $anim;
+
+  &::selection {
+    background-color: transparent;
+    color: inherit;
+  }
+}
+
+.payment-item {
+  display: block;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    .payment-item__title {
+      @include hover;
+    }
+  }
+}
+
+.payment-item__input {
+  display: none;
+
+  &:checked ~ .payment-item__wrap {
+    background-color: $active-bg;
+  }
+}
+
+.payment-item__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 170px;
+  height: 85px;
+  border-radius: $radius-2;
+  background-color: $light-main-bg;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: background-color $anim;
+
+  &:not(.payment-item__wrap--long-img) {
+    padding-top: 20px;
+  }
+}
+
+.payment-item__wrap--long-img {
+  padding-top: 10px;
+}
+
+.payment-item__title {
+  font-size: 12px;
+  color: $white-text;
+  transition: transform $anim;
+}
+
+.payment-item__name {
+  font-family: $gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  color: $white-text;
+}
