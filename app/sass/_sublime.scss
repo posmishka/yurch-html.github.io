@@ -2,23 +2,27 @@
 
 .code {
   min-height: 100vh;
-  padding: 15px 20px 20px 54px;
+  padding: 1em 1.25em 1.25em 3.375em;
   background-color: #262728;
   font-family: 'Source Code Pro', sans-serif;
   color: #fff;
   font-size: 16px;
   counter-reset: code-counter;
+  white-space: nowrap;
 }
 
 .list__tab {
-  position: relative;
   padding-left: 1em;
   border-left: 1px solid rgba(143, 144, 138, .29);
 }
 
+.list__tab  .list__tab {
+  border: none;
+}
+
 .code__line {
-  height: 22px;
-  line-height: 22px;
+  height: 1.375em;
+  line-height: 1.375em;
 }
 
 .code__list {
@@ -29,7 +33,7 @@
   content: counter(code-counter);
   counter-increment: code-counter;
   position: absolute;
-  right: calc(100% + 15px);
+  right: calc(100% + 1em);
   color: #8f908a;
 }
 
@@ -42,28 +46,48 @@
 }
 
 .color-3 {
-  color: #8a7bff;
+  color: #b07bfe;
 }
 
 .color-4 {
-  color:#a6e22d;
+  color: #a6e22d;
+}
+
+.color-5 {
+  color: #e6db74;
+}
+
+.color-6 {
+  color: #8f908a;
 }
 
 .download-link {
   position: fixed;
-  right: 20px;
-  top: 20px;
+  right: 15px;
+  top: 15px;
   z-index: 3;
   display: flex;
   align-items: center;
-  color: #fff;
+  padding: 5px;
+  background: rgba(38, 39, 40, .8);
+  color: #8f908a;
+  transition: color .2s;
+}
 
-  &:active {
-    opacity: .8;
-  }
+.download-link:hover,
+.download-link:focus {
+  color: #9fa2a4;
+}
+
+.download-link:active {
+  opacity: .8;
 }
 
 .download-link__ico {
   width:24px;
   height:24px
+}
+
+.download-link__text:before {
+  content: attr(data-text);
 }

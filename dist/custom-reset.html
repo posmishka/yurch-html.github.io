@@ -1,0 +1,1689 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>custom-reset.css</title>
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" type="image/png" href="img/sublime.jpg">
+
+  <style>
+    body {
+      overflow: auto;
+      background-color: #262728;
+    }
+  </style>
+</head>
+<body>
+
+<a class="download-link" href="custom-reset.css" download>
+  <span class="download-link__ico">
+    <svg viewBox="0 0 24 24">
+      <path fill="currentColor" d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" />
+    </svg>
+  </span>
+
+  <span class="download-link__text" data-text="Download"></span>
+</a>
+
+<div class="code-wrap">
+  <ul class="code">
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line">
+          <span class="color-6">/* custom-reset.css | 18.08.2018 | https://yurch-html.github.io/dist/custom-reset.html */</span>
+        </li>
+
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">*</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">*</span>:before,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">*</span>:after {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">box-sizing</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">html</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">box-sizing</span>: <span class="color-1">border-box</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">@media</span> <span class="color-1">all</span> <span class="color-2">and</span> (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-2">html</span> {
+            </li>
+
+            <li>
+              <ol class="list__tab">
+                <li class="code__line">
+                  <span class="color-1">display</span>: <span class="color-1">flex</span>;
+                </li>
+
+                <li class="code__line">
+                  <span class="color-1">flex-direction</span>: <span class="color-1">column</span>;
+                </li>
+              </ol>
+            </li>
+
+            <li class="code__line">}</li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">body</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">display</span>: <span class="color-1">flex</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">flex-direction</span>: <span class="color-1">column</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">min-height</span>: <span class="color-3">100</span><span class="color-2">vh</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">margin</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">background-color</span>: <span class="color-1">#fff</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">line-height</span>: <span class="color-3">1.15</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">text-rendering</span>: <span class="color-1">optimizeLegibility</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">text-decoration</span>-skip: objects;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">-webkit-</span>text-<span class="color-1">size</span>-adjust: <span class="color-3">100</span><span class="color-2">%</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">-webkit-font-smoothing</span>: <span class="color-1">antialiased</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">-webkit-tap-highlight-color</span>: <span class="color-1">transparent</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          :focus {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">outline</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">p</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">dd</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">dl</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">figure</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">blockquote</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">margin</span>: <span class="color-3">0</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">blockquote</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">q</span>,
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">quotes</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">ul</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">ol</span>,
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">padding</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">margin</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">list-style-type</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">table</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">border-collapse</span>: <span class="color-1">collapse</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">border-spacing</span>: <span class="color-3">0</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">th</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">font-weight</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">h1</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">h2</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">h3</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">h4</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">h5</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">h6</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">margin</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">font-size</span>: <span class="color-1">inherit</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">font-weight</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">audio</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">video</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">display</span>: <span class="color-1">block</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">img</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">display</span>: <span class="color-1">block</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">border</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">iframe</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">border</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">pre</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">code</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">kbd</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">samp</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">font-family</span>: <span class="color-1">monospace</span>, <span class="color-1">monospace</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">font-size</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">a</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">background-color</span>: <span class="color-1">transparent</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">text-decoration</span>: <span class="color-1">none</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">color</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">abbr</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">border</span>: <span class="color-1">none</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">text-decoration</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">b</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">strong</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">font-weight</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">i</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">em</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">font-style</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">dfn</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">font-style</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">mark</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">background-color</span>: <span class="color-1">transparent</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">color</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">small</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">font-size</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">sub</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">sup</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">position</span>: <span class="color-1">relative</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">vertical-align</span>: <span class="color-1">baseline</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">font-size</span>: <span class="color-1">inherit</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">line-height</span>: <span class="color-3">0</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">sub</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">bottom</span>: <span class="color-3">-.25</span><span class="color-2">em</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">sup</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">top</span>: <span class="color-3">-.5</span><span class="color-2">em</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">button</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">input</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">optgroup</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">select</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">textarea</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">padding</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">margin</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">border</span>: <span class="color-1">none</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">border-radius</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">box-shadow</span>: <span class="color-1">none</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">background-color</span>: <span class="color-1">transparent</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">font</span>: <span class="color-1">inherit</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">color</span>: <span class="color-1">inherit</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">letter-spacing</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">button</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">input</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">overflow</span>: <span class="color-1">visible</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">button</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-2">select</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">text-align</span>: <span class="color-1">left</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">text-transform</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">button</span>,
+        </li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'button'</span>],
+        </li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'reset'</span>],
+        </li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'submit'</span>],
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">cursor</span>: <span class="color-1">pointer</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">-webkit-appearance</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">textarea</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">resize</span>: <span class="color-1">none</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">overflow-y</span>: <span class="color-1">auto</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">overflow-x</span>: <span class="color-1">hidden</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">button</span>::<span class="color-1">-moz-</span>focus-inner,
+        </li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'button'</span>]::<span class="color-1">-moz-</span>focus-inner,
+        </li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'reset'</span>]::<span class="color-1">-moz-</span>focus-inner,
+        </li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'submit'</span>]::<span class="color-1">-moz-</span>focus-inner,
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">border</span>: <span class="color-1">none</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">padding</span>: <span class="color-3">0</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">button</span>:-moz-focusring,
+        </li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'button'</span>]:-moz-focusring,
+        </li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'reset'</span>]:-moz-focusring,
+        </li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'submit'</span>]:-moz-focusring,
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">outline</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'number'</span>]::<span class="color-1">-webkit-</span>inner-spin-button,
+        </li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'number'</span>]::<span class="color-1">-webkit-</span>outer-spin-button {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">height</span>: <span class="color-1">auto</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'search'</span>] {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">outline</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          [<span class="color-4">type</span><span class="color-2">=</span><span class="color-5">'search'</span>]::<span class="color-1">-webkit-</span>search-decoration {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">-webkit-appearance</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          ::<span class="color-1">-webkit-</span>file-upload-button {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">-webkit-appearance</span>: <span class="color-1">none</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">font</span>: <span class="color-1">inherit</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">fieldset</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">padding</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">margin</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">border</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">legend</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">display</span>: <span class="color-1">block</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">padding</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">white-space</span>: <span class="color-1">normal</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">select</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">-webkit-appearance</span>: <span class="color-1">none</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">-moz-appearance</span>: <span class="color-1">none</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">appearance</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">select</span>::<span class="color-1">-ms</span>-expand {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">display</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          ::<span class="color-1">-webkit-</span>input-placeholder {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">color</span>: <span class="color-1">inherit</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">opacity</span>: <span class="color-3">1</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">transition</span>: <span class="color-1">opacity</span> <span class="color-3">.3</span><span class="color-2">s</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          ::<span class="color-1">-moz-</span>input-placeholder {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">color</span>: <span class="color-1">inherit</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">opacity</span>: <span class="color-3">1</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">transition</span>: <span class="color-1">opacity</span> <span class="color-3">.3</span><span class="color-2">s</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          :-moz-placeholder {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">color</span>: <span class="color-1">inherit</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">opacity</span>: <span class="color-3">1</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">transition</span>: <span class="color-1">opacity</span> <span class="color-3">.3</span><span class="color-2">s</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          :-ms-input-placeholder {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">color</span>: <span class="color-1">inherit</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">opacity</span>: <span class="color-3">1</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">transition</span>: <span class="color-1">opacity</span> <span class="color-3">.3</span><span class="color-2">s</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          :focus::<span class="color-1">-webkit-</span>input-placeholder {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">opacity</span>: <span class="color-3">0</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          :focus::<span class="color-1">-moz-</span>input-placeholder {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">opacity</span>: <span class="color-3">0</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          :focus:-moz-placeholder {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">opacity</span>: <span class="color-3">0</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          :focus:-ms-input-placeholder {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">opacity</span>: <span class="color-3">0</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-2">svg</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">display</span>: <span class="color-1">block</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">width</span>: <span class="color-3">100</span><span class="color-2">%</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">height</span>: <span class="color-3">100</span><span class="color-2">%</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">fill</span>: <span class="color-1">currentColor</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          [<span class="color-4">hidden</span>] {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">display</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          :disabled,
+        </li>
+
+        <li class="code__line">
+          <span class="color-4">.disabled</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">cursor</span>: <span class="color-1">not-allowed</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          ::<span class="color-1">-ms-</span>clear {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">display</span>: <span class="color-1">none</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          :-webkit-autofill {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">box-shadow</span>: <span class="color-3">0 0 100</span><span class="color-2">px</span> <span class="color-3">#fff</span> <span class="color-1">inset</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">-webkit-text-fill-color</span>: <span class="color-1">currentColor</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          ::selection {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">color</span>: <span class="color-3">#fff</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">background-color</span>: <span class="color-3">#004fe4</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-4">.clearfix</span>:after {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">content</span>: <span class="color-5">''</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">display</span>: <span class="color-1">block</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">clear</span>: <span class="color-1">both</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-4">.visually-hidden</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">position</span>: <span class="color-1">absolute</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">z-index</span>: <span class="color-3">-1</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">width</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">height</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">padding</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">margin</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">border</span>: <span class="color-1">none</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">overflow</span>: <span class="color-1">hidden</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-4">.cover-pic</span>,
+        </li>
+
+        <li class="code__line">
+          <span class="color-4">.contain-pic</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">position</span>: <span class="color-1">absolute</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">top</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">left</span>: <span class="color-3">0</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">width</span>: <span class="color-3">100</span><span class="color-2">%</span>;
+            </li>
+
+            <li class="code__line">
+              <span class="color-1">height</span>: <span class="color-3">100</span><span class="color-2">%</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-4">.cover-pic</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">object-fit</span>: <span class="color-1">cover</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-4">.contain-pic</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">object-fit</span>: <span class="color-1">contain</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+      </ol>
+    </li>
+
+    <li class="code__item">
+      <ol class="code__list">
+        <li class="code__line"></li>
+
+        <li class="code__line">
+          <span class="color-4">.footer-page</span> {
+        </li>
+
+        <li>
+          <ol class="list__tab">
+            <li class="code__line">
+              <span class="color-1">margin-top</span>: <span class="color-1">auto</span>;
+            </li>
+          </ol>
+        </li>
+
+        <li class="code__line">}</li>
+
+        <li class="code__line"></li>
+      </ol>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>
