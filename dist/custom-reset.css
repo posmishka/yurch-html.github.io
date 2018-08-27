@@ -1,4 +1,4 @@
-/* custom-reset.css | 20.08.2018 | https://yurch-html.github.io/dist/custom-reset.html */
+/* custom-reset.css | 27.08.2018 | https://yurch-html.github.io/dist/custom-reset.html */
 
 *,
 *:before,
@@ -8,6 +8,7 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -20,7 +21,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0; 
   background-color: #fff;
   line-height: 1; 
